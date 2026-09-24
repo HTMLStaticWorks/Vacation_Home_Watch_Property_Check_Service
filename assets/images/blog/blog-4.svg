@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="blogBg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B2A38" />
+      <stop offset="100%" stop-color="#0E1720" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#blogBg4)" />
+  <circle cx="400" cy="220" r="130" fill="#24374A" stroke="#486581" stroke-width="2" />
+  <!-- Keys and lock visual -->
+  <circle cx="380" cy="200" r="25" fill="none" stroke="#C29627" stroke-width="6" />
+  <line x1="400" y1="215" x2="450" y2="265" stroke="#C29627" stroke-width="6" stroke-linecap="round" />
+  <line x1="435" y1="250" x2="445" y2="240" stroke="#C29627" stroke-width="6" stroke-linecap="round" />
+  <line x1="445" y1="260" x2="455" y2="250" stroke="#C29627" stroke-width="6" stroke-linecap="round" />
+  <g transform="translate(250, 400)">
+    <rect width="300" height="40" rx="20" fill="#2C5E47" />
+    <text x="150" y="25" text-anchor="middle" fill="#FFFFFF" font-family="'Manrope', sans-serif" font-size="13" font-weight="700">VENDOR ACCESS PROTOCOLS</text>
+  </g>
+</svg>

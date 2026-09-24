@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="blogBg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D271E" />
+      <stop offset="100%" stop-color="#19150E" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#blogBg3)" />
+  <circle cx="400" cy="220" r="130" fill="#3D3426" stroke="#C29627" stroke-width="2" />
+  <!-- Storm cloud / Rain / Shield visual -->
+  <path d="M360,220 C360,190 390,170 420,180 C440,170 470,185 470,210 C485,215 490,235 480,250 L340,250 C330,240 335,225 360,220 Z" fill="#90A4AE" />
+  <g transform="translate(250, 400)">
+    <rect width="300" height="40" rx="20" fill="#2C5E47" />
+    <text x="150" y="25" text-anchor="middle" fill="#FFFFFF" font-family="'Manrope', sans-serif" font-size="13" font-weight="700">SEVERE WEATHER READINESS</text>
+  </g>
+</svg>

@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently Asked Questions — HOMEHAVEN WATCH</title>
+  <meta name="description" content="Find answers to common questions about Homehaven Watch: visit schedules, visual checklist scope, photo reports, storm prep, mail collection, and pricing.">
+  <meta name="keywords" content="home watch FAQ, vacation home inspection questions, property check answers, seasonal home watch guide">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="shortcut icon" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-xl sticky-top haven-navbar" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand-wrapper" href="index.html">
+        <div class="brand-icon-box"><i class="bi bi-shield-check"></i></div>
+        <span class="brand-title">HOMEHAVEN WATCH</span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHavenNav" aria-controls="navbarHavenNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2 text-primary"></i>
+      </button>
+
+      <!-- Nav Links & Dropdowns -->
+      <div class="collapse navbar-collapse" id="navbarHavenNav">
+        <ul class="navbar-nav ms-auto me-xl-3 mb-2 mb-lg-0">
+          
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle haven-nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu haven-dropdown-menu">
+              <li><a class="dropdown-item haven-dropdown-item " href="index.html"><i class="bi bi-house-door"></i> Home 1 (Classic Trust)</a></li>
+              <li><a class="dropdown-item haven-dropdown-item " href="home-2.html"><i class="bi bi-building"></i> Home 2 (Editorial Care)</a></li>
+            </ul>
+          </li>
+
+          <!-- Services (Direct Link - No Dropdown) -->
+          <li class="nav-item">
+            <a class="nav-link haven-nav-link " href="services.html">Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link haven-nav-link " href="how-it-works.html">How It Works</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link haven-nav-link " href="about.html">About</a>
+          </li>
+
+          <!-- Resources Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle haven-nav-link active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdown-menu haven-dropdown-menu">
+              <li><a class="dropdown-item haven-dropdown-item " href="resources.html"><i class="bi bi-folder2-open"></i> Resource Hub</a></li>
+              <li><a class="dropdown-item haven-dropdown-item " href="property-watch-checklist.html"><i class="bi bi-check2-square"></i> Property Watch Checklist</a></li>
+              <li><a class="dropdown-item haven-dropdown-item " href="seasonal-preparation.html"><i class="bi bi-calendar-range"></i> Seasonal Preparation</a></li>
+              <li><a class="dropdown-item haven-dropdown-item " href="storm-preparation-guide.html"><i class="bi bi-shield-exclamation"></i> Storm Preparation Guide</a></li>
+              <li><a class="dropdown-item haven-dropdown-item active" href="faqs.html"><i class="bi bi-question-circle"></i> FAQs</a></li>
+              <li><a class="dropdown-item haven-dropdown-item " href="blog.html"><i class="bi bi-journal-text"></i> Insights &amp; Blog</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link haven-nav-link " href="contact.html">Contact</a>
+          </li>
+
+          <!-- Dashboard Menu (Beside Contact) -->
+          <li class="nav-item">
+            <a class="nav-link haven-nav-link " href="dashboard.html">Dashboard</a>
+          </li>
+        </ul>
+
+        <!-- Right Side Controls: RTL Button, Theme Toggle, Sign Up Button -->
+        <div class="d-flex align-items-center gap-2 mt-3 mt-xl-0">
+          <button type="button" class="theme-toggle-btn rtl-toggle-btn" aria-label="Toggle RTL layout" title="Toggle RTL">RTL</button>
+          <button type="button" class="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Toggle theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <a href="signup.html" class="btn btn-haven-primary btn-sm-custom">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="py-5 bg-surface border-bottom border-secondary-subtle">
+    <div class="container py-4 text-center max-w-800 mx-auto">
+      <div class="eyebrow-badge badge-navy">
+        <i class="bi bi-question-circle"></i> Common Inquiries
+      </div>
+      <h1 class="display-4 fw-bold text-primary mb-3">Frequently Asked Questions</h1>
+      <p class="lead text-secondary mb-4">
+        Clear answers regarding our visual inspection standards, visit frequencies, reporting format, mail handling, and emergency limitations.
+      </p>
+
+      <!-- Instant Search Bar -->
+      <div class="input-group max-w-500 mx-auto shadow-sm">
+        <span class="input-group-text bg-surface border-end-0 text-muted"><i class="bi bi-search"></i></span>
+        <input type="text" class="form-control border-start-0 ps-0" id="faqSearchInput" placeholder="Search questions (e.g. photos, frequency, emergency, mail)..." aria-label="Search FAQs">
+      </div>
+    </div>
+  </header>
+
+  <!-- FAQ Content & Filter Categories -->
+  <main class="section-padding bg-subtle">
+    <div class="container max-w-900">
+      
+      <!-- Category Filter Pills -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
+        <button type="button" class="btn btn-haven-secondary btn-sm-custom faq-category-btn active" data-category="all">All Topics</button>
+        <button type="button" class="btn btn-haven-secondary btn-sm-custom faq-category-btn" data-category="general">General</button>
+        <button type="button" class="btn btn-haven-secondary btn-sm-custom faq-category-btn" data-category="checks">Property Checks</button>
+        <button type="button" class="btn btn-haven-secondary btn-sm-custom faq-category-btn" data-category="mail">Mail &amp; Deliveries</button>
+        <button type="button" class="btn btn-haven-secondary btn-sm-custom faq-category-btn" data-category="storm">Storm Readiness</button>
+        <button type="button" class="btn btn-haven-secondary btn-sm-custom faq-category-btn" data-category="pricing">Pricing &amp; Plans</button>
+        <button type="button" class="btn btn-haven-secondary btn-sm-custom faq-category-btn" data-category="reports">Reports</button>
+      </div>
+
+      <!-- FAQ Accordion -->
+      <div class="accordion haven-accordion" id="masterFaqAccordion">
+        
+        <!-- FAQ 1: Frequency -->
+        <div class="accordion-item" data-category="general checks">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqItem1" aria-expanded="true">
+              How often should my vacation property be checked?
+            </button>
+          </h3>
+          <div id="faqItem1" class="accordion-collapse collapse show" data-bs-parent="#masterFaqAccordion">
+            <div class="accordion-body">
+              For most seasonal and vacation homes, a <strong>bi-weekly</strong> visit schedule provides ideal balance between regular oversight and cost efficiency. However, during harsh winter freeze cycles or high-risk hurricane months, we recommend <strong>weekly</strong> checks to ensure timely observation.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2: What happens during a visit -->
+        <div class="accordion-item" data-category="checks">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqItem2">
+              What exactly happens during a scheduled property check?
+            </button>
+          </h3>
+          <div id="faqItem2" class="accordion-collapse collapse" data-bs-parent="#masterFaqAccordion">
+            <div class="accordion-body">
+              Our specialist performs a 24-point visual walkthrough. We inspect ground-level exterior perimeters, doors, windows, and outdoor hose bibbs. Inside, we scan ceilings, check under all sinks for visible moisture, verify thermostat temperatures, check refrigerator power, clear mail, and log timestamped photos.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3: Do I receive photos -->
+        <div class="accordion-item" data-category="reports">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqItem3">
+              Do I receive photos and documentation after every visit?
+            </button>
+          </h3>
+          <div id="faqItem3" class="accordion-collapse collapse" data-bs-parent="#masterFaqAccordion">
+            <div class="accordion-body">
+              Yes. Every visit generates a digital visit log delivered via email. It contains date and GPS-verified photographs of your property, thermostat readouts, entryways, and concise inspector notes detailing visible conditions.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4: Mail Collection -->
+        <div class="accordion-item" data-category="mail">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqItem4">
+              Can you collect our postal mail and packages?
+            </button>
+          </h3>
+          <div id="faqItem4" class="accordion-collapse collapse" data-bs-parent="#masterFaqAccordion">
+            <div class="accordion-body">
+              Yes. As part of our Standard and Complete Watch tiers (or as an add-on), we empty curbside mailboxes, retrieve porch packages, clear driveway flyers, and place all items securely inside your home.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5: Storm Preparation -->
+        <div class="accordion-item" data-category="storm">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqItem5">
+              Can you prepare my home before severe weather?
+            </button>
+          </h3>
+          <div id="faqItem5" class="accordion-collapse collapse" data-bs-parent="#masterFaqAccordion">
+            <div class="accordion-body">
+              Yes. Our Storm Preparation service includes securing lightweight patio furniture, checking storm shutter latches, clearing exterior drains, and capturing a pre-storm photographic baseline.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 6: Issues observed -->
+        <div class="accordion-item" data-category="general checks">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqItem6">
+              What happens if an issue or leak is noticed?
+            </button>
+          </h3>
+          <div id="faqItem6" class="accordion-collapse collapse" data-bs-parent="#masterFaqAccordion">
+            <div class="accordion-body">
+              You are notified immediately with high-resolution photos and description. If pre-authorized, we can shut off the main water valve to mitigate water spread and coordinate with your preferred licensed contractor for repairs.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 7: Emergency Repairs -->
+        <div class="accordion-item" data-category="general checks">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqItem7">
+              Do you provide emergency repairs or licensed trade work?
+            </button>
+          </h3>
+          <div id="faqItem7" class="accordion-collapse collapse" data-bs-parent="#masterFaqAccordion">
+            <div class="accordion-body">
+              No. Homehaven Watch is strictly a <strong>visual property-watch and concierge oversight service</strong>. We do not provide licensed plumbing, electrical, structural engineering, or municipal emergency repairs. We facilitate access for qualified licensed contractors selected or approved by you.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 8: Contracts & Pricing -->
+        <div class="accordion-item" data-category="pricing">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqItem8">
+              Can I customize my service schedule and cancel anytime?
+            </button>
+          </h3>
+          <div id="faqItem8" class="accordion-collapse collapse" data-bs-parent="#masterFaqAccordion">
+            <div class="accordion-body">
+              Yes. All Homehaven Watch plans operate on flexible month-to-month arrangements with zero long-term cancellation penalties. You can pause or adjust visit frequency whenever your travel schedule shifts.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Disclaimer Banner -->
+      <div class="disclaimer-banner mt-5">
+        <h6 class="fw-bold text-primary mb-1"><i class="bi bi-info-circle text-primary me-2"></i>Service Scope Disclaimer</h6>
+        <p class="small text-secondary mb-0">
+          Answers provided above reflect our visual inspection protocols. Homehaven Watch does not replace licensed trades, certified structural inspections, or municipal 911 emergency response.
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="haven-footer">
+    <div class="container">
+      <div class="row g-4">
+        
+        <!-- Column 1: Brand Info & Social Icons -->
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="brand-icon-box" style="width: 36px; height: 36px;">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <span class="brand-title">HOMEHAVEN WATCH</span>
+          </div>
+          <p class="small text-secondary mb-3">
+            Professional property checks and visual care for vacant, seasonal, and vacation residences. Peace of mind while you're away.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="X Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Services -->
+        <div class="col-lg-2 col-md-6">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="vacant-home-checks.html">Vacant Home Checks</a></li>
+            <li><a href="mail-collection.html">Mail Collection</a></li>
+            <li><a href="storm-preparation.html">Storm Preparation</a></li>
+            <li><a href="post-storm-checks.html">Post-Storm Checks</a></li>
+            <li><a href="exterior-checks.html">Exterior Checks</a></li>
+            <li><a href="interior-checks.html">Interior Checks</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Resources -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Resources</h5>
+          <ul class="footer-links">
+            <li><a href="property-watch-checklist.html">Property Watch Checklist</a></li>
+            <li><a href="seasonal-preparation.html">Seasonal Preparation Guide</a></li>
+            <li><a href="storm-preparation-guide.html">Storm Preparation Protocol</a></li>
+            <li><a href="faqs.html">Frequently Asked Questions</a></li>
+            <li><a href="blog.html">Homeowner Insights Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Company -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Homehaven</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="pricing.html">Pricing &amp; Plans</a></li>
+            <li><a href="service-areas.html">Service Regions</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Service Disclaimer Callout -->
+      <div class="footer-disclaimer-box">
+        <p class="mb-1"><strong>Service Disclaimer:</strong> Homehaven Watch provides non-invasive visual property observation and assistance services. Our visits do not replace licensed home inspections, structural engineering, licensed electrical/plumbing trades, security guard services, or municipal emergency services. For active emergencies or structural hazards, contact local emergency authorities.</p>
+        <p class="mb-0">Template demonstration purposes only. Fictional brand name.</p>
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 HOMEHAVEN WATCH. All rights reserved.
+        </div>
+        <div class="d-flex gap-3">
+          <a href="resources.html" class="text-secondary text-decoration-none">Privacy Policy</a>
+          <a href="resources.html" class="text-secondary text-decoration-none">Terms of Service</a>
+          <a href="documentation/index.html" class="text-secondary text-decoration-none">Documentation</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top-btn" aria-label="Scroll back to top"><i class="bi bi-arrow-up-short fs-4"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

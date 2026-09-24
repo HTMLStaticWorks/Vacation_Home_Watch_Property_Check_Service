@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homeowner Resource Hub — HOMEHAVEN WATCH</title>
+  <meta name="description" content="Guides, checklists, and seasonal resources for vacation and second-home owners. Explore checklists, storm preparation protocols, and helpful articles.">
+  <meta name="keywords" content="vacation home resources, property watch checklist, seasonal departure guide, second home maintenance guide">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="shortcut icon" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-xl sticky-top haven-navbar" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand-wrapper" href="index.html">
+        <div class="brand-icon-box"><i class="bi bi-shield-check"></i></div>
+        <span class="brand-title">HOMEHAVEN WATCH</span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHavenNav" aria-controls="navbarHavenNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2 text-primary"></i>
+      </button>
+
+      <!-- Nav Links & Dropdowns -->
+      <div class="collapse navbar-collapse" id="navbarHavenNav">
+        <ul class="navbar-nav ms-auto me-xl-3 mb-2 mb-lg-0">
+          
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle haven-nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu haven-dropdown-menu">
+              <li><a class="dropdown-item haven-dropdown-item " href="index.html"><i class="bi bi-house-door"></i> Home 1 (Classic Trust)</a></li>
+              <li><a class="dropdown-item haven-dropdown-item " href="home-2.html"><i class="bi bi-building"></i> Home 2 (Editorial Care)</a></li>
+            </ul>
+          </li>
+
+          <!-- Services (Direct Link - No Dropdown) -->
+          <li class="nav-item">
+            <a class="nav-link haven-nav-link " href="services.html">Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link haven-nav-link " href="how-it-works.html">How It Works</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link haven-nav-link " href="about.html">About</a>
+          </li>
+
+          <!-- Resources Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle haven-nav-link active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdown-menu haven-dropdown-menu">
+              <li><a class="dropdown-item haven-dropdown-item active" href="resources.html"><i class="bi bi-folder2-open"></i> Resource Hub</a></li>
+              <li><a class="dropdown-item haven-dropdown-item " href="property-watch-checklist.html"><i class="bi bi-check2-square"></i> Property Watch Checklist</a></li>
+              <li><a class="dropdown-item haven-dropdown-item " href="seasonal-preparation.html"><i class="bi bi-calendar-range"></i> Seasonal Preparation</a></li>
+              <li><a class="dropdown-item haven-dropdown-item " href="storm-preparation-guide.html"><i class="bi bi-shield-exclamation"></i> Storm Preparation Guide</a></li>
+              <li><a class="dropdown-item haven-dropdown-item " href="faqs.html"><i class="bi bi-question-circle"></i> FAQs</a></li>
+              <li><a class="dropdown-item haven-dropdown-item " href="blog.html"><i class="bi bi-journal-text"></i> Insights &amp; Blog</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link haven-nav-link " href="contact.html">Contact</a>
+          </li>
+
+          <!-- Dashboard Menu (Beside Contact) -->
+          <li class="nav-item">
+            <a class="nav-link haven-nav-link " href="dashboard.html">Dashboard</a>
+          </li>
+        </ul>
+
+        <!-- Right Side Controls: RTL Button, Theme Toggle, Sign Up Button -->
+        <div class="d-flex align-items-center gap-2 mt-3 mt-xl-0">
+          <button type="button" class="theme-toggle-btn rtl-toggle-btn" aria-label="Toggle RTL layout" title="Toggle RTL">RTL</button>
+          <button type="button" class="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Toggle theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <a href="signup.html" class="btn btn-haven-primary btn-sm-custom">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Header -->
+  <header class="py-5 bg-surface border-bottom border-secondary-subtle">
+    <div class="container py-4 text-center max-w-800 mx-auto">
+      <div class="eyebrow-badge badge-brass">
+        <i class="bi bi-folder2-open"></i> Knowledge &amp; Preparation
+      </div>
+      <h1 class="display-4 fw-bold text-primary mb-3">Homeowner Resource Center</h1>
+      <p class="lead text-secondary mb-0">
+        Practical guides, departure checklists, severe weather protocols, and frequently asked questions for second-home and vacation property owners.
+      </p>
+    </div>
+  </header>
+
+  <!-- Resources Hub Directory -->
+  <main class="section-padding bg-subtle">
+    <div class="container">
+      <div class="row g-4">
+        
+        <!-- Resource 1: Interactive Checklist -->
+        <div class="col-md-6 col-lg-4">
+          <div class="haven-card">
+            <div class="haven-card-icon"><i class="bi bi-check2-square"></i></div>
+            <h4 class="fw-bold text-primary">Property Watch Checklist</h4>
+            <p class="text-secondary small">An interactive and printable departure checklist covering interior plumbing, exterior locks, climate settings, and mail.</p>
+            <a href="property-watch-checklist.html" class="btn btn-haven-brass btn-sm-custom mt-auto w-100">
+              <i class="bi bi-ui-checks"></i> Open Interactive Checklist
+            </a>
+          </div>
+        </div>
+
+        <!-- Resource 2: Seasonal Preparation -->
+        <div class="col-md-6 col-lg-4">
+          <div class="haven-card">
+            <div class="haven-card-icon"><i class="bi bi-calendar-range"></i></div>
+            <h4 class="fw-bold text-primary">Seasonal Departure Guide</h4>
+            <p class="text-secondary small">Step-by-step guidance on preparing your home for long seasonal vacancies, winter freeze mitigation, and summer humidity control.</p>
+            <a href="seasonal-preparation.html" class="btn btn-haven-primary btn-sm-custom mt-auto w-100">
+              Read Seasonal Guide
+            </a>
+          </div>
+        </div>
+
+        <!-- Resource 3: Storm Preparation -->
+        <div class="col-md-6 col-lg-4">
+          <div class="haven-card">
+            <div class="haven-card-icon"><i class="bi bi-shield-exclamation"></i></div>
+            <h4 class="fw-bold text-primary">Storm Preparation Protocol</h4>
+            <p class="text-secondary small">General readiness guidance for severe coastal storms, high-wind events, and post-storm visual verification practices.</p>
+            <a href="storm-preparation-guide.html" class="btn btn-haven-primary btn-sm-custom mt-auto w-100">
+              Read Storm Guide
+            </a>
+          </div>
+        </div>
+
+        <!-- Resource 4: FAQs -->
+        <div class="col-md-6 col-lg-4">
+          <div class="haven-card">
+            <div class="haven-card-icon"><i class="bi bi-question-circle"></i></div>
+            <h4 class="fw-bold text-primary">Frequently Asked Questions</h4>
+            <p class="text-secondary small">Answers to common questions about visit frequencies, photo reporting, emergency policies, and key custody security.</p>
+            <a href="faqs.html" class="btn btn-haven-secondary btn-sm-custom mt-auto w-100">
+              Browse All FAQs
+            </a>
+          </div>
+        </div>
+
+        <!-- Resource 5: Blog & Insights -->
+        <div class="col-md-6 col-lg-4">
+          <div class="haven-card">
+            <div class="haven-card-icon"><i class="bi bi-journal-text"></i></div>
+            <h4 class="fw-bold text-primary">Insights &amp; Articles</h4>
+            <p class="text-secondary small">Educational articles on vacation property stewardship, smart thermostats, leak awareness, and vendor management.</p>
+            <a href="blog.html" class="btn btn-haven-secondary btn-sm-custom mt-auto w-100">
+              Explore Blog
+            </a>
+          </div>
+        </div>
+
+        <!-- Resource 6: Contact Specialist -->
+        <div class="col-md-6 col-lg-4">
+          <div class="haven-card bg-navy text-white">
+            <div class="haven-card-icon bg-warning text-dark"><i class="bi bi-chat-heart"></i></div>
+            <h4 class="fw-bold text-white">Need Personal Advice?</h4>
+            <p class="text-light opacity-75 small">Speak directly with our property care team to discuss customized checklists for your specific estate.</p>
+            <a href="contact.html" class="btn btn-haven-brass btn-sm-custom mt-auto w-100">
+              Talk With Our Team
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="haven-footer">
+    <div class="container">
+      <div class="row g-4">
+        
+        <!-- Column 1: Brand Info & Social Icons -->
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="brand-icon-box" style="width: 36px; height: 36px;">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <span class="brand-title">HOMEHAVEN WATCH</span>
+          </div>
+          <p class="small text-secondary mb-3">
+            Professional property checks and visual care for vacant, seasonal, and vacation residences. Peace of mind while you're away.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="X Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Services -->
+        <div class="col-lg-2 col-md-6">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="vacant-home-checks.html">Vacant Home Checks</a></li>
+            <li><a href="mail-collection.html">Mail Collection</a></li>
+            <li><a href="storm-preparation.html">Storm Preparation</a></li>
+            <li><a href="post-storm-checks.html">Post-Storm Checks</a></li>
+            <li><a href="exterior-checks.html">Exterior Checks</a></li>
+            <li><a href="interior-checks.html">Interior Checks</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Resources -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Resources</h5>
+          <ul class="footer-links">
+            <li><a href="property-watch-checklist.html">Property Watch Checklist</a></li>
+            <li><a href="seasonal-preparation.html">Seasonal Preparation Guide</a></li>
+            <li><a href="storm-preparation-guide.html">Storm Preparation Protocol</a></li>
+            <li><a href="faqs.html">Frequently Asked Questions</a></li>
+            <li><a href="blog.html">Homeowner Insights Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Company -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Homehaven</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="pricing.html">Pricing &amp; Plans</a></li>
+            <li><a href="service-areas.html">Service Regions</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Service Disclaimer Callout -->
+      <div class="footer-disclaimer-box">
+        <p class="mb-1"><strong>Service Disclaimer:</strong> Homehaven Watch provides non-invasive visual property observation and assistance services. Our visits do not replace licensed home inspections, structural engineering, licensed electrical/plumbing trades, security guard services, or municipal emergency services. For active emergencies or structural hazards, contact local emergency authorities.</p>
+        <p class="mb-0">Template demonstration purposes only. Fictional brand name.</p>
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 HOMEHAVEN WATCH. All rights reserved.
+        </div>
+        <div class="d-flex gap-3">
+          <a href="resources.html" class="text-secondary text-decoration-none">Privacy Policy</a>
+          <a href="resources.html" class="text-secondary text-decoration-none">Terms of Service</a>
+          <a href="documentation/index.html" class="text-secondary text-decoration-none">Documentation</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top-btn" aria-label="Scroll back to top"><i class="bi bi-arrow-up-short fs-4"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

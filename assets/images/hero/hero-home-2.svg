@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="forestSkyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C2D8D3" />
+      <stop offset="50%" stop-color="#DEEBE8" />
+      <stop offset="100%" stop-color="#F2EFE9" />
+    </linearGradient>
+    <linearGradient id="stoneWallGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5A6774" />
+      <stop offset="100%" stop-color="#3D4956" />
+    </linearGradient>
+    <linearGradient id="cedarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9C6644" />
+      <stop offset="100%" stop-color="#7F4F24" />
+    </linearGradient>
+    <linearGradient id="warmGlassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2B414E" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#142129" stop-opacity="0.95" />
+    </linearGradient>
+    <filter id="elevatedDrop" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0B131C" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1200" height="800" fill="url(#forestSkyGrad)" />
+
+  <!-- Mountain Silhouette in Background -->
+  <path d="M0,420 L280,240 L520,380 L840,190 L1200,420 L1200,800 L0,800 Z" fill="#9FB5AD" opacity="0.4" />
+  <path d="M0,460 L380,310 L700,450 L1020,290 L1200,430 L1200,800 L0,800 Z" fill="#759388" opacity="0.4" />
+
+  <!-- Evergreen Tree Line -->
+  <g fill="#274639" opacity="0.7">
+    <polygon points="40,490 65,420 90,490" />
+    <polygon points="70,490 95,400 120,490" />
+    <polygon points="100,500 130,390 160,500" />
+    <polygon points="140,510 175,410 210,510" />
+    <polygon points="980,500 1020,380 1060,500" />
+    <polygon points="1040,510 1075,400 1110,510" />
+    <polygon points="1090,520 1130,420 1170,520" />
+  </g>
+
+  <!-- Terrain -->
+  <rect x="0" y="520" width="1200" height="280" fill="#3D5A4C" />
+  <polygon points="200,570 1000,570 1120,800 80,800" fill="#4B6658" />
+
+  <!-- Asymmetric Contemporary Mountain Architecture -->
+  <g filter="url(#elevatedDrop)">
+    <!-- Central Stone Feature Wall / Fireplace Column -->
+    <rect x="580" y="160" width="120" height="430" fill="url(#stoneWallGrad)" stroke="#2F3842" stroke-width="2" />
+    <!-- Stone texture lines -->
+    <line x1="580" y1="210" x2="700" y2="210" stroke="#2F3842" stroke-width="2" />
+    <line x1="580" y1="260" x2="700" y2="260" stroke="#2F3842" stroke-width="2" />
+    <line x1="580" y1="310" x2="700" y2="310" stroke="#2F3842" stroke-width="2" />
+    <line x1="580" y1="360" x2="700" y2="360" stroke="#2F3842" stroke-width="2" />
+    <line x1="580" y1="410" x2="700" y2="410" stroke="#2F3842" stroke-width="2" />
+
+    <!-- Left Wing (Shed Roof Architecture) -->
+    <polygon points="220,320 580,220 580,580 220,580" fill="url(#cedarGrad)" stroke="#583110" stroke-width="2" />
+    <!-- Angled Roof -->
+    <polygon points="200,325 590,215 595,235 205,345" fill="#14222D" />
+
+    <!-- Left Wing High Cathedral Windows -->
+    <polygon points="250,350 550,265 550,540 250,540" fill="url(#warmGlassGrad)" />
+    <!-- Window Grid Mullions -->
+    <line x1="350" y1="320" x2="350" y2="540" stroke="#14222D" stroke-width="3" />
+    <line x1="450" y1="290" x2="450" y2="540" stroke="#14222D" stroke-width="3" />
+    <line x1="250" y1="420" x2="550" y2="420" stroke="#14222D" stroke-width="3" />
+
+    <!-- Interior warm ambient glow -->
+    <ellipse cx="400" cy="480" rx="100" ry="40" fill="#FFDA79" opacity="0.2" />
+
+    <!-- Right Wing (Modern Flat / Cantilevered Timber Deck) -->
+    <rect x="700" y="270" width="340" height="300" fill="#ECE7DE" stroke="#D3CBC0" stroke-width="2" />
+    <rect x="680" y="250" width="380" height="22" fill="#14222D" />
+
+    <!-- Right Wing Master Suite Glass Wall -->
+    <rect x="730" y="300" width="280" height="180" fill="url(#warmGlassGrad)" />
+    <line x1="823" y1="300" x2="823" y2="480" stroke="#14222D" stroke-width="3" />
+    <line x1="916" y1="300" x2="916" y2="480" stroke="#14222D" stroke-width="3" />
+    <polygon points="750,310 810,310 770,470 740,470" fill="#FFFFFF" opacity="0.2" />
+
+    <!-- Cantilevered Decking -->
+    <polygon points="660,540 1060,540 1100,610 620,610" fill="#B08968" stroke="#7F4F24" stroke-width="2" />
+    <!-- Glass Deck Railing -->
+    <rect x="650" y="500" width="420" height="40" fill="rgba(255,255,255,0.4)" stroke="#CBD5E1" stroke-width="1.5" />
+  </g>
+
+  <!-- Editorial Inspection Spotlight UI Card -->
+  <g transform="translate(80, 80)">
+    <rect width="280" height="110" rx="12" fill="#122232" opacity="0.95" />
+    <rect x="15" y="15" width="6" height="80" rx="3" fill="#C29627" />
+    <text x="35" y="42" fill="#FFFFFF" font-family="'Manrope', sans-serif" font-size="15" font-weight="700">SEASONAL RESIDENCE</text>
+    <text x="35" y="65" fill="#9EB1C5" font-family="'DM Sans', sans-serif" font-size="12">Bi-Weekly Exterior &amp; HVAC Check</text>
+    <text x="35" y="85" fill="#34A86A" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700">● Schedule Active • Status Normal</text>
+  </g>
+</svg>

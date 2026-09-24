@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgMail" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E2A38" />
+      <stop offset="100%" stop-color="#101822" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgMail)" />
+  <!-- Mailbox Post -->
+  <rect x="385" y="240" width="30" height="260" rx="4" fill="#5D4037" />
+  <!-- Mailbox Body -->
+  <path d="M280,240 L480,240 C520,240 520,160 480,160 L280,160 C240,160 240,240 280,240 Z" fill="#1B3148" stroke="#486581" stroke-width="4" />
+  <!-- Red/Brass Flag Up -->
+  <rect x="270" y="100" width="8" height="90" fill="#C29627" />
+  <polygon points="278,100 320,115 278,130" fill="#C29627" />
+  <!-- Envelopes inside -->
+  <rect x="310" y="175" width="90" height="50" rx="2" fill="#FFFFFF" transform="rotate(-10 310 175)" />
+  <rect x="340" y="180" width="90" height="50" rx="2" fill="#FAF0CA" transform="rotate(5 340 180)" />
+  <g transform="translate(240, 480)">
+    <rect width="320" height="45" rx="22" fill="#2C5E47" />
+    <text x="160" y="28" text-anchor="middle" fill="#FFFFFF" font-family="'DM Sans', sans-serif" font-size="14" font-weight="700">Mail Collected &amp; Secured Indoors</text>
+  </g>
+</svg>

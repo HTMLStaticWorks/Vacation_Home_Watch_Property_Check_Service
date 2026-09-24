@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgInsp1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18283C" />
+      <stop offset="100%" stop-color="#0B131C" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgInsp1)" />
+  <!-- Inspection Frame / Viewfinder -->
+  <rect x="100" y="80" width="600" height="440" rx="16" fill="#152436" stroke="#2C5E47" stroke-width="2" />
+  <!-- Exterior Door / Locks check visual -->
+  <rect x="320" y="160" width="160" height="300" rx="4" fill="#20344A" stroke="#C29627" stroke-width="3" />
+  <circle cx="440" cy="310" r="10" fill="#C29627" />
+  <rect x="340" y="200" width="120" height="80" fill="#0D1926" />
+  <!-- Magnifying / Inspection Target -->
+  <circle cx="440" cy="310" r="45" fill="none" stroke="#2C5E47" stroke-width="3" stroke-dasharray="8 4" />
+  <g transform="translate(140, 120)">
+    <rect width="220" height="45" rx="22" fill="#2C5E47" />
+    <text x="30" y="28" fill="#FFFFFF" font-family="'Manrope', sans-serif" font-size="14" font-weight="700">EXTERIOR &amp; ENTRY CHECK</text>
+  </g>
+  <g transform="translate(460, 440)">
+    <rect width="200" height="40" rx="8" fill="#1C3044" stroke="#2C5E47" />
+    <text x="20" y="25" fill="#6EE7B7" font-family="'DM Sans', sans-serif" font-size="13" font-weight="700">✓ Locks &amp; Seals Verified</text>
+  </g>
+</svg>

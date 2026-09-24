@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="teamBg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#342D24" />
+      <stop offset="100%" stop-color="#1B1712" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="200" fill="url(#teamBg3)" />
+  <g transform="translate(100, 70)">
+    <circle cx="100" cy="80" r="50" fill="#E8B896" />
+    <path d="M50,80 Q100,25 150,80" fill="#4E342E" />
+    <path d="M20,240 Q100,160 180,240 L180,270 L20,270 Z" fill="#122232" />
+    <polygon points="60,240 100,180 140,240" fill="#2C5E47" />
+    <circle cx="135" cy="225" r="10" fill="#C29627" />
+  </g>
+</svg>

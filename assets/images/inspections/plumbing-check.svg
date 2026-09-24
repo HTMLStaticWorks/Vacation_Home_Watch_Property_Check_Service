@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgPlumb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#182A3E" />
+      <stop offset="100%" stop-color="#0E1620" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgPlumb)" />
+  <!-- Under Sink / Valve Check Representation -->
+  <rect x="250" y="140" width="300" height="280" rx="8" fill="#12202E" stroke="#486581" stroke-width="2" />
+  <!-- Main Shutoff Valve Diagram -->
+  <line x1="400" y1="180" x2="400" y2="360" stroke="#78909C" stroke-width="16" />
+  <circle cx="400" cy="270" r="36" fill="#C29627" stroke="#8D6E63" stroke-width="4" />
+  <rect x="360" y="262" width="80" height="16" rx="4" fill="#FFFFFF" />
+  <!-- Moisture Sensor Status -->
+  <g transform="translate(230, 470)">
+    <rect width="340" height="50" rx="25" fill="#2C5E47" />
+    <text x="170" y="32" text-anchor="middle" fill="#FFFFFF" font-family="'DM Sans', sans-serif" font-size="14" font-weight="700">✓ Moisture Check: Zero Dampness</text>
+  </g>
+</svg>

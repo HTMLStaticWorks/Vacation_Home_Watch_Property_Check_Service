@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOMEHAVEN WATCH — Vacation Home Watch &amp; Property Check Service</title>
+  <meta name="description"
+    content="Professional vacation home watch and property checks for vacant, seasonal, and second homes. Visual inspections, mail collection, storm preparation, and clear visit reports.">
+  <meta name="keywords"
+    content="vacation home watch, property check service, seasonal home inspection, vacant property monitoring, second home care">
+
+  <!-- CSS Dependencies -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="shortcut icon" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- =========================================================================
+       1. Top Notice & Sticky Navigation
+       ========================================================================= -->
+  <nav class="navbar navbar-expand-xl sticky-top haven-navbar" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand-wrapper" href="index.html">
+        <div class="brand-icon-box"><i class="bi bi-shield-check"></i></div>
+        <span class="brand-title">HOMEHAVEN WATCH</span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarHavenNav" aria-controls="navbarHavenNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2 text-primary"></i>
+      </button>
+
+      <!-- Nav Links & Dropdowns -->
+      <div class="collapse navbar-collapse" id="navbarHavenNav">
+        <ul class="navbar-nav ms-auto me-xl-3 mb-2 mb-lg-0">
+
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle haven-nav-link active" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu haven-dropdown-menu">
+              <li><a class="dropdown-item haven-dropdown-item active" href="index.html"><i class="bi bi-house-door"></i>
+                  Home 1 (Classic Trust)</a></li>
+              <li><a class="dropdown-item haven-dropdown-item " href="home-2.html"><i class="bi bi-building"></i> Home 2
+                  (Editorial Care)</a></li>
+            </ul>
+          </li>
+
+          <!-- Services (Direct Link - No Dropdown) -->
+          <li class="nav-item">
+            <a class="nav-link haven-nav-link " href="services.html">Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link haven-nav-link " href="how-it-works.html">How It Works</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link haven-nav-link " href="about.html">About</a>
+          </li>
+
+          <!-- Resources Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle haven-nav-link " href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdown-menu haven-dropdown-menu">
+              <li><a class="dropdown-item haven-dropdown-item " href="resources.html"><i class="bi bi-folder2-open"></i>
+                  Resource Hub</a></li>
+              <li><a class="dropdown-item haven-dropdown-item " href="property-watch-checklist.html"><i
+                    class="bi bi-check2-square"></i> Property Watch Checklist</a></li>
+              <li><a class="dropdown-item haven-dropdown-item " href="seasonal-preparation.html"><i
+                    class="bi bi-calendar-range"></i> Seasonal Preparation</a></li>
+              <li><a class="dropdown-item haven-dropdown-item " href="storm-preparation-guide.html"><i
+                    class="bi bi-shield-exclamation"></i> Storm Preparation Guide</a></li>
+              <li><a class="dropdown-item haven-dropdown-item " href="faqs.html"><i class="bi bi-question-circle"></i>
+                  FAQs</a></li>
+              <li><a class="dropdown-item haven-dropdown-item " href="blog.html"><i class="bi bi-journal-text"></i>
+                  Insights &amp; Blog</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link haven-nav-link " href="contact.html">Contact</a>
+          </li>
+
+          <!-- Dashboard Menu (Beside Contact) -->
+          <li class="nav-item">
+            <a class="nav-link haven-nav-link " href="dashboard.html">Dashboard</a>
+          </li>
+        </ul>
+
+        <!-- Right Side Controls: RTL Button, Theme Toggle, Sign Up Button -->
+        <div class="d-flex align-items-center gap-2 mt-3 mt-xl-0">
+          <button type="button" class="theme-toggle-btn rtl-toggle-btn" aria-label="Toggle RTL layout"
+            title="Toggle RTL">RTL</button>
+          <button type="button" class="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Toggle theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <a href="signup.html" class="btn btn-haven-primary btn-sm-custom">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =========================================================================
+       2. Hero Section with Floating Inspection Status Card
+       ========================================================================= -->
+  <header class="position-relative py-5 py-lg-6 bg-surface overflow-hidden">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+
+        <!-- Left Hero Content -->
+        <div class="col-lg-6 hero-anim-item">
+          <div class="eyebrow-badge">
+            <i class="bi bi-shield-fill-check"></i> Professional Home Watch Care
+          </div>
+          <h1 class="display-4 fw-bold mb-3 text-primary">
+            Peace of Mind While <span class="text-primary font-serif fst-italic">You're Away.</span>
+          </h1>
+          <p class="lead mb-4">
+            Professional property checks for the home you don't visit every day. We provide scheduled visual
+            inspections, mail retrieval, storm readiness, and detailed photo reports for seasonal and vacation
+            homeowners.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a href="contact.html" class="btn btn-haven-brass btn-lg-custom">
+              <i class="bi bi-calendar2-check"></i> Request a Property Check
+            </a>
+            <a href="services.html" class="btn btn-haven-secondary btn-lg-custom">
+              Explore Our Services
+            </a>
+          </div>
+
+          <div class="d-flex align-items-center gap-4 pt-2 border-top border-secondary-subtle">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-check-circle-fill text-success fs-5"></i>
+              <span class="small fw-semibold text-secondary">Visual &amp; Non-Invasive</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-camera-fill text-primary fs-5"></i>
+              <span class="small fw-semibold text-secondary">GPS Timestamped Photos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Image with Floating Status Card -->
+        <div class="col-lg-6 position-relative hero-anim-item">
+          <div class="rounded-4 overflow-hidden shadow-xl position-relative border border-secondary-subtle">
+            <img src="assets/images/hero/hero-home-1.svg" alt="Luxury vacation home with pool and patio"
+              class="w-100 h-auto">
+
+            <!-- Floating Inspection Card -->
+            <div class="floating-hero-card">
+              <div class="floating-hero-header">
+                <i class="bi bi-geo-alt-fill text-primary"></i> PROPERTY CHECK
+              </div>
+              <ul class="floating-hero-list">
+                <li><i class="bi bi-check-circle-fill"></i> Exterior Visually Checked</li>
+                <li><i class="bi bi-check-circle-fill"></i> Mail &amp; Packages Collected</li>
+                <li><i class="bi bi-check-circle-fill"></i> Interior &amp; HVAC Reviewed</li>
+              </ul>
+              <div class="floating-hero-footer">
+                <span>Last Visit: Demo Timestamp</span>
+                <span class="text-success fw-bold">✓ Normal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       3. Trust Strip (No fake metrics, calm quality statements)
+       ========================================================================= -->
+  <section class="py-4 bg-subtle border-top border-bottom border-secondary-subtle">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3 trust-anim-item">
+          <div class="d-flex align-items-center justify-content-center gap-2">
+            <i class="bi bi-calendar-check text-primary fs-4"></i>
+            <span class="fw-bold text-primary">Scheduled Visits</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 trust-anim-item">
+          <div class="d-flex align-items-center justify-content-center gap-2">
+            <i class="bi bi-card-checklist text-success fs-4"></i>
+            <span class="fw-bold text-primary">Detailed Checklists</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 trust-anim-item">
+          <div class="d-flex align-items-center justify-content-center gap-2">
+            <i class="bi bi-chat-left-text text-warning fs-4"></i>
+            <span class="fw-bold text-primary">Clear Communication</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 trust-anim-item">
+          <div class="d-flex align-items-center justify-content-center gap-2">
+            <i class="bi bi-shield-shaded text-primary fs-4"></i>
+            <span class="fw-bold text-primary">Proactive Care</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. Peace of Mind Section
+       ========================================================================= -->
+  <section class="section-padding bg-surface">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="eyebrow-badge badge-sage">
+            <i class="bi bi-heart-pulse"></i> Proactive Awareness
+          </div>
+          <h2 class="display-6 fw-bold text-primary mb-3">
+            Your Home Doesn't Have to Be Occupied to Be <span class="font-serif fst-italic">Looked After.</span>
+          </h2>
+          <p class="lead mb-4">
+            Vacant and seasonal properties face unique challenges when left unattended for weeks or months at a time. A
+            regular visual check helps identify visible warning signs before they become major surprises.
+          </p>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="p-3 bg-subtle rounded-3 h-100">
+                <h6 class="fw-bold text-primary mb-1"><i class="bi bi-droplet-half text-primary me-2"></i>Visible Water
+                  Indicators</h6>
+                <p class="small mb-0 text-secondary">Checking under sinks, water heater pans, and ceilings for obvious
+                  moisture signs.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-3 bg-subtle rounded-3 h-100">
+                <h6 class="fw-bold text-primary mb-1"><i class="bi bi-wind text-primary me-2"></i>Severe Weather Effects
+                </h6>
+                <p class="small mb-0 text-secondary">Observing exterior walls, rooflines, screens, and yards after heavy
+                  storms.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-3 bg-subtle rounded-3 h-100">
+                <h6 class="fw-bold text-primary mb-1"><i class="bi bi-mailbox text-primary me-2"></i>Mail Accumulation
+                </h6>
+                <p class="small mb-0 text-secondary">Clearing full boxes, flyers, and visible packages from doorsteps.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-3 bg-subtle rounded-3 h-100">
+                <h6 class="fw-bold text-primary mb-1"><i class="bi bi-thermometer-half text-primary me-2"></i>HVAC
+                  Status Review</h6>
+                <p class="small mb-0 text-secondary">Confirming thermostat settings and basic air handler operation
+                  visually.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="rounded-4 overflow-hidden shadow-lg border border-secondary-subtle">
+            <img src="assets/images/inspections/exterior-check.svg" alt="Exterior visual check diagram"
+              class="w-100 h-auto">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. Services Preview
+       ========================================================================= -->
+  <section class="section-padding bg-subtle">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="eyebrow-badge badge-navy">
+          <i class="bi bi-grid-fill"></i> Core Offerings
+        </div>
+        <h2 class="display-6 fw-bold text-primary">Comprehensive Visual Property Checks</h2>
+        <p class="text-secondary lead">Tailored visit schedules designed to match your travel habits and property
+          requirements.</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Service 1 -->
+        <div class="col-md-6 col-xl-4">
+          <div class="haven-card">
+            <div class="haven-card-icon">
+              <i class="bi bi-eye"></i>
+            </div>
+            <h4 class="fw-bold text-primary">Vacant Home Checks</h4>
+            <p class="text-secondary small">Scheduled recurring visual sweeps of both exterior perimeters and interior
+              living spaces.</p>
+            <ul class="card-checklist">
+              <li><i class="bi bi-check2"></i> Door and window visual check</li>
+              <li><i class="bi bi-check2"></i> Odor and moisture observation</li>
+              <li><i class="bi bi-check2"></i> Comprehensive digital visit log</li>
+            </ul>
+            <a href="vacant-home-checks.html" class="btn btn-haven-secondary btn-sm-custom mt-3 w-100">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-md-6 col-xl-4">
+          <div class="haven-card">
+            <div class="haven-card-icon">
+              <i class="bi bi-envelope-paper"></i>
+            </div>
+            <h4 class="fw-bold text-primary">Mail &amp; Package Collection</h4>
+            <p class="text-secondary small">Preventing package buildup and collecting postal deliveries to keep your
+              home tidy.</p>
+            <ul class="card-checklist">
+              <li><i class="bi bi-check2"></i> Front porch &amp; driveway check</li>
+              <li><i class="bi bi-check2"></i> Secure mail transfer indoors</li>
+              <li><i class="bi bi-check2"></i> Immediate package alerts</li>
+            </ul>
+            <a href="mail-collection.html" class="btn btn-haven-secondary btn-sm-custom mt-3 w-100">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-md-6 col-xl-4">
+          <div class="haven-card">
+            <div class="haven-card-icon">
+              <i class="bi bi-cloud-lightning-rain"></i>
+            </div>
+            <h4 class="fw-bold text-primary">Storm Preparation</h4>
+            <p class="text-secondary small">Securing outdoor lightweight patio items and reviewing property closures
+              before weather.</p>
+            <ul class="card-checklist">
+              <li><i class="bi bi-check2"></i> Patio furniture tie-down/stow</li>
+              <li><i class="bi bi-check2"></i> Exterior shutter check</li>
+              <li><i class="bi bi-check2"></i> Pre-storm photo log</li>
+            </ul>
+            <a href="storm-preparation.html" class="btn btn-haven-secondary btn-sm-custom mt-3 w-100">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="col-md-6 col-xl-4">
+          <div class="haven-card">
+            <div class="haven-card-icon">
+              <i class="bi bi-cloud-sun"></i>
+            </div>
+            <h4 class="fw-bold text-primary">Post-Storm Visual Checks</h4>
+            <p class="text-secondary small">Prompt visual inspections following severe weather to document visible
+              property conditions.</p>
+            <ul class="card-checklist">
+              <li><i class="bi bi-check2"></i> Fallen branches &amp; debris review</li>
+              <li><i class="bi bi-check2"></i> Roofline and siding observation</li>
+              <li><i class="bi bi-check2"></i> Water pooling documentation</li>
+            </ul>
+            <a href="post-storm-checks.html" class="btn btn-haven-secondary btn-sm-custom mt-3 w-100">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="col-md-6 col-xl-4">
+          <div class="haven-card">
+            <div class="haven-card-icon">
+              <i class="bi bi-door-closed"></i>
+            </div>
+            <h4 class="fw-bold text-primary">Exterior Inspections</h4>
+            <p class="text-secondary small">Ground-level perimeter reviews covering entry points, irrigation, lighting,
+              and general grounds.</p>
+            <ul class="card-checklist">
+              <li><i class="bi bi-check2"></i> Locks and exterior fixture review</li>
+              <li><i class="bi bi-check2"></i> Pool water level visual check</li>
+              <li><i class="bi bi-check2"></i> Pest/insect activity indicators</li>
+            </ul>
+            <a href="exterior-checks.html" class="btn btn-haven-secondary btn-sm-custom mt-3 w-100">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="col-md-6 col-xl-4">
+          <div class="haven-card">
+            <div class="haven-card-icon">
+              <i class="bi bi-house-check"></i>
+            </div>
+            <h4 class="fw-bold text-primary">Interior Visual Review</h4>
+            <p class="text-secondary small">Walkthrough of key living zones, observing plumbing fixtures, thermostats,
+              and electrical panels.</p>
+            <ul class="card-checklist">
+              <li><i class="bi bi-check2"></i> Ceiling &amp; floor moisture review</li>
+              <li><i class="bi bi-check2"></i> Refrigerator/freezer power check</li>
+              <li><i class="bi bi-check2"></i> Breaker visual status review</li>
+            </ul>
+            <a href="interior-checks.html" class="btn btn-haven-secondary btn-sm-custom mt-3 w-100">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="services.html" class="btn btn-haven-primary btn-lg-custom">
+          View Complete Services Directory <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. How It Works (4-Step Editorial Timeline)
+       ========================================================================= -->
+  <section class="section-padding bg-surface">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="eyebrow-badge badge-sage">
+          <i class="bi bi-diagram-3"></i> Simple Four-Step Flow
+        </div>
+        <h2 class="display-6 fw-bold text-primary">How Our Property Watch Service Works</h2>
+        <p class="text-secondary lead">From initial property onboarding to your visit report delivered directly to your
+          inbox.</p>
+      </div>
+
+      <div class="process-timeline row g-4 text-center justify-content-center">
+        <!-- Step 1 -->
+        <div class="col-md-6 col-xl-3 process-step-item">
+          <div class="process-step-number">01</div>
+          <h5 class="fw-bold text-primary">Tell Us About Your Property</h5>
+          <p class="text-secondary small">Share your property type, location, occupancy patterns, and specific areas of
+            focus.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="col-md-6 col-xl-3 process-step-item">
+          <div class="process-step-number">02</div>
+          <h5 class="fw-bold text-primary">Choose a Visit Schedule</h5>
+          <p class="text-secondary small">Select from weekly, bi-weekly, or monthly visual checks tailored to your
+            seasonal habits.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="col-md-6 col-xl-3 process-step-item">
+          <div class="process-step-number">03</div>
+          <h5 class="fw-bold text-primary">We Complete the Check</h5>
+          <p class="text-secondary small">Our specialist conducts a thorough multi-point visual inspection using
+            standardized protocols.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="col-md-6 col-xl-3 process-step-item">
+          <div class="process-step-number">04</div>
+          <h5 class="fw-bold text-primary">Receive Your Visit Report</h5>
+          <p class="text-secondary small">Review timestamped photos, checklist items, and concise notes delivered right
+            after each visit.</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="how-it-works.html" class="btn btn-haven-secondary">Explore Detailed Journey &amp; Sample Report</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. Property Check Visual Checklist Demo
+       ========================================================================= -->
+  <section class="section-padding bg-subtle">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <div class="eyebrow-badge badge-navy">
+            <i class="bi bi-ui-checks"></i> Standardized Protocols
+          </div>
+          <h2 class="display-6 fw-bold text-primary mb-3">
+            Every Point Checked. <br><span class="font-serif fst-italic">Every Visit Documented.</span>
+          </h2>
+          <p class="text-secondary mb-4">
+            We follow structured, non-invasive visual checklists to ensure consistency across every room, system, and
+            perimeter zone.
+          </p>
+
+          <div class="disclaimer-banner">
+            <p class="fw-semibold mb-1"><i class="bi bi-info-circle me-1"></i> Visual Service Notice</p>
+            <p class="small mb-0">Checklists represent visual observation protocols. We do not provide licensed
+              engineering, plumbing, electrical, or structural diagnostics.</p>
+          </div>
+
+          <a href="property-watch-checklist.html" class="btn btn-haven-brass">
+            <i class="bi bi-download"></i> View Interactive Checklist Tool
+          </a>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="report-mockup-card">
+            <div class="report-header">
+              <div class="report-header-title">
+                <i class="bi bi-shield-check fs-4 text-warning"></i>
+                <div>
+                  <div class="fw-bold">HOMEHAVEN VISIT REPORT</div>
+                  <div class="small opacity-75">Demo Property: Coastal Haven Residence</div>
+                </div>
+              </div>
+              <span class="report-badge-status">✓ VISUAL CHECK COMPLETED</span>
+            </div>
+
+            <div class="report-meta-grid">
+              <div class="report-meta-item">
+                <div class="meta-label">Date</div>
+                <div class="meta-val">September 24, 2026</div>
+              </div>
+              <div class="report-meta-item">
+                <div class="meta-label">Inspector</div>
+                <div class="meta-val">Marcus Vance</div>
+              </div>
+              <div class="report-meta-item">
+                <div class="meta-label">Schedule</div>
+                <div class="meta-val">Bi-Weekly Tier</div>
+              </div>
+              <div class="report-meta-item">
+                <div class="meta-label">Condition</div>
+                <div class="meta-val text-success">Normal Status</div>
+              </div>
+            </div>
+
+            <div class="report-body">
+              <h6 class="fw-bold text-primary mb-3">Multi-Point Visual Summary</h6>
+              <div class="report-checklist-grid">
+                <div class="report-check-row">
+                  <span class="check-item-name"><i class="bi bi-door-closed text-primary"></i> Main Entry &amp;
+                    Locks</span>
+                  <span class="status-pill status-ok">✓ Normal</span>
+                </div>
+                <div class="report-check-row">
+                  <span class="check-item-name"><i class="bi bi-droplet text-primary"></i> Sinks &amp; Vanities</span>
+                  <span class="status-pill status-ok">✓ Dry</span>
+                </div>
+                <div class="report-check-row">
+                  <span class="check-item-name"><i class="bi bi-thermometer-sun text-primary"></i> Thermostat
+                    72°F</span>
+                  <span class="status-pill status-ok">✓ Active</span>
+                </div>
+                <div class="report-check-row">
+                  <span class="check-item-name"><i class="bi bi-mailbox text-primary"></i> Mail &amp; Packages</span>
+                  <span class="status-pill status-ok">✓ Cleared</span>
+                </div>
+              </div>
+
+              <h6 class="fw-bold text-primary mb-2">Timestamped Photo Log</h6>
+              <div class="report-photos-grid">
+                <div class="report-photo-thumb">
+                  <img src="assets/images/inspections/exterior-check.svg" alt="Exterior check photo">
+                  <span class="photo-caption-tag">Front Entry</span>
+                </div>
+                <div class="report-photo-thumb">
+                  <img src="assets/images/inspections/hvac-meter.svg" alt="HVAC status photo">
+                  <span class="photo-caption-tag">HVAC Status</span>
+                </div>
+                <div class="report-photo-thumb">
+                  <img src="assets/images/inspections/plumbing-check.svg" alt="Plumbing valve photo">
+                  <span class="photo-caption-tag">Main Shutoff</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. Homeowner Scenarios (Fictional illustrative cases)
+       ========================================================================= -->
+  <section class="section-padding bg-surface">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="eyebrow-badge badge-sage">
+          <i class="bi bi-people"></i> Designed For Your Lifestyle
+        </div>
+        <h2 class="display-6 fw-bold text-primary">Who Chooses Homehaven Watch?</h2>
+        <p class="text-secondary lead">Fictional scenarios demonstrating how scheduled checks fit different ownership
+          situations.</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Scenario 1 -->
+        <div class="col-md-6 col-xl-4">
+          <div class="haven-card">
+            <span class="badge bg-primary-subtle text-primary fw-bold mb-3 px-3 py-2 rounded-pill">Seasonal
+              Homeowners</span>
+            <h4 class="fw-bold text-primary">Wintering Elsewhere</h4>
+            <p class="text-secondary small">
+              Homeowners who spend several months away during cold or hot seasons need regular confirmation that
+              heating, plumbing, and perimeter security remain undisturbed.
+            </p>
+            <div class="bg-subtle p-3 rounded-3 mt-auto">
+              <span class="small fw-bold text-primary d-block mb-1">Typical Cadence:</span>
+              <span class="small text-secondary">Weekly or Bi-Weekly checks with post-freeze visual walkthroughs.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scenario 2 -->
+        <div class="col-md-6 col-xl-4">
+          <div class="haven-card">
+            <span class="badge bg-success-subtle text-success fw-bold mb-3 px-3 py-2 rounded-pill">Vacation
+              Homeowners</span>
+            <h4 class="fw-bold text-primary">Weekend Getaways</h4>
+            <p class="text-secondary small">
+              Owners who use their property every few weeks benefit from mail retrieval, patio prep before arrival, and
+              storm checks when severe weather passes through.
+            </p>
+            <div class="bg-subtle p-3 rounded-3 mt-auto">
+              <span class="small fw-bold text-primary d-block mb-1">Typical Cadence:</span>
+              <span class="small text-secondary">Bi-Weekly checks with storm preparation add-on.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scenario 3 -->
+        <div class="col-md-6 col-xl-4">
+          <div class="haven-card">
+            <span class="badge bg-warning-subtle text-warning fw-bold mb-3 px-3 py-2 rounded-pill">Out-of-State
+              Owners</span>
+            <h4 class="fw-bold text-primary">Remote Properties</h4>
+            <p class="text-secondary small">
+              Owners who live states away and cannot easily drive over rely on trusted local visual eyes to coordinate
+              contractor entry and report observed property conditions.
+            </p>
+            <div class="bg-subtle p-3 rounded-3 mt-auto">
+              <span class="small fw-bold text-primary d-block mb-1">Typical Cadence:</span>
+              <span class="small text-secondary">Complete Watch tier with vendor access assistance.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. Storm Preparation Spotlight
+       ========================================================================= -->
+  <section class="section-padding bg-navy text-white">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="eyebrow-badge badge-navy text-warning border-warning">
+            <i class="bi bi-shield-exclamation text-warning"></i> Weather Protection
+          </div>
+          <h2 class="display-6 fw-bold mb-3 text-white">
+            Before the Storm, <br><span class="font-serif fst-italic text-warning">Prepare the Property.</span>
+          </h2>
+          <p class="text-light opacity-75 lead mb-4">
+            Severe coastal or winter storms can arise quickly. Our storm prep service helps secure loose patio
+            furniture, check window latches, and coordinate visual reviews immediately following major weather events.
+          </p>
+          <ul class="card-checklist text-light mb-4">
+            <li><i class="bi bi-check-circle-fill text-warning"></i> Pre-storm exterior visual sweep</li>
+            <li><i class="bi bi-check-circle-fill text-warning"></i> Lightweight outdoor item stowing</li>
+            <li><i class="bi bi-check-circle-fill text-warning"></i> Post-storm photo condition report</li>
+          </ul>
+          <a href="storm-preparation.html" class="btn btn-haven-brass">
+            Explore Storm Preparation Services
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <div class="rounded-4 overflow-hidden shadow-xl border border-secondary">
+            <img src="assets/images/storm/storm-prep.svg" alt="Storm preparation protocol" class="w-100 h-auto">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       11. Final Call To Action
+       ========================================================================= -->
+  <section class="py-5 bg-subtle border-top border-secondary-subtle text-center">
+    <div class="container py-4 max-w-700 mx-auto">
+      <h2 class="display-5 fw-bold text-primary mb-3">
+        Enjoy Your Time Away. <br><span class="font-serif fst-italic text-primary">We'll Keep an Eye on Home.</span>
+      </h2>
+      <p class="lead text-secondary mb-4">
+        Speak with our property care team today to set up your tailored visual inspection schedule.
+      </p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="contact.html" class="btn btn-haven-brass btn-lg-custom">
+          <i class="bi bi-clipboard-check"></i> Request a Property Check
+        </a>
+        <a href="how-it-works.html" class="btn btn-haven-secondary btn-lg-custom">
+          Learn How It Works
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       12. Professional 4-Column Footer
+       ========================================================================= -->
+  <footer class="haven-footer">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Column 1: Brand Info & Social Icons -->
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="brand-icon-box" style="width: 36px; height: 36px;">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <span class="brand-title">HOMEHAVEN WATCH</span>
+          </div>
+          <p class="small text-secondary mb-3">
+            Professional property checks and visual care for vacant, seasonal, and vacation residences. Peace of mind
+            while you're away.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="X Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Services -->
+        <div class="col-lg-2 col-md-6">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="vacant-home-checks.html">Vacant Home Checks</a></li>
+            <li><a href="mail-collection.html">Mail Collection</a></li>
+            <li><a href="storm-preparation.html">Storm Preparation</a></li>
+            <li><a href="post-storm-checks.html">Post-Storm Checks</a></li>
+            <li><a href="exterior-checks.html">Exterior Checks</a></li>
+            <li><a href="interior-checks.html">Interior Checks</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Resources -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Resources</h5>
+          <ul class="footer-links">
+            <li><a href="property-watch-checklist.html">Property Watch Checklist</a></li>
+            <li><a href="seasonal-preparation.html">Seasonal Preparation Guide</a></li>
+            <li><a href="storm-preparation-guide.html">Storm Preparation Protocol</a></li>
+            <li><a href="faqs.html">Frequently Asked Questions</a></li>
+            <li><a href="blog.html">Homeowner Insights Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Company -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Homehaven</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="pricing.html">Pricing &amp; Plans</a></li>
+            <li><a href="service-areas.html">Service Regions</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Service Disclaimer Callout -->
+      <div class="footer-disclaimer-box">
+        <p class="mb-1"><strong>Service Disclaimer:</strong> Homehaven Watch provides non-invasive visual property
+          observation and assistance services. Our visits do not replace licensed home inspections, structural
+          engineering, licensed electrical/plumbing trades, security guard services, or municipal emergency services.
+          For active emergencies or structural hazards, contact local emergency authorities.</p>
+        <p class="mb-0">Template demonstration purposes only. Fictional brand name.</p>
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 HOMEHAVEN WATCH. All rights reserved.
+        </div>
+        <div class="d-flex gap-3">
+          <a href="resources.html" class="text-secondary text-decoration-none">Privacy Policy</a>
+          <a href="resources.html" class="text-secondary text-decoration-none">Terms of Service</a>
+          <a href="documentation/index.html" class="text-secondary text-decoration-none">Documentation</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Floating Button -->
+  <button type="button" class="back-to-top-btn" aria-label="Scroll back to top">
+    <i class="bi bi-arrow-up-short fs-4"></i>
+  </button>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

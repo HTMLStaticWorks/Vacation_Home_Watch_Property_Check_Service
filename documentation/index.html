@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template Documentation — HOMEHAVEN WATCH</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .doc-sidebar {
+      position: sticky;
+      top: 90px;
+      height: calc(100vh - 110px);
+      overflow-y: auto;
+    }
+    .doc-section {
+      margin-bottom: 4rem;
+      padding-top: 1rem;
+    }
+    pre {
+      background-color: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 1rem 1.25rem;
+      font-size: 0.88rem;
+      color: var(--text-primary);
+    }
+  </style>
+</head>
+<body class="bg-surface">
+
+  <!-- Header -->
+  <header class="py-3 bg-surface border-bottom border-secondary-subtle sticky-top haven-navbar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand-wrapper" href="../index.html">
+        <div class="brand-icon-box" style="width: 38px; height: 38px;"><i class="bi bi-shield-check"></i></div>
+        <div class="brand-text-block">
+          <span class="brand-title">HOMEHAVEN WATCH</span>
+          <span class="brand-tagline">HTML5 Template Documentation</span>
+        </div>
+      </a>
+      <div class="d-flex align-items-center gap-3">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme"><i class="bi bi-moon-stars-fill"></i></button>
+        <a href="../index.html" class="btn btn-haven-brass btn-sm-custom"><i class="bi bi-box-arrow-up-right me-1"></i> View Live Site</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container my-5">
+    <div class="row g-5">
+      
+      <!-- Documentation Sidebar Menu -->
+      <div class="col-lg-3 d-none d-lg-block">
+        <div class="doc-sidebar pe-3">
+          <h6 class="fw-bold text-primary text-uppercase mb-3">Documentation</h6>
+          <ul class="nav flex-column gap-2 small">
+            <li class="nav-item"><a class="nav-link p-1 text-secondary" href="#docIntro">1. Introduction &amp; Features</a></li>
+            <li class="nav-item"><a class="nav-link p-1 text-secondary" href="#docStructure">2. File &amp; Folder Structure</a></li>
+            <li class="nav-item"><a class="nav-link p-1 text-secondary" href="#docColors">3. Color Palette &amp; CSS Variables</a></li>
+            <li class="nav-item"><a class="nav-link p-1 text-secondary" href="#docThemes">4. Light &amp; Dark Theme Engine</a></li>
+            <li class="nav-item"><a class="nav-link p-1 text-secondary" href="#docComponents">5. Core Interactive Components</a></li>
+            <li class="nav-item"><a class="nav-link p-1 text-secondary" href="#docForms">6. Form Validation &amp; Feedback</a></li>
+            <li class="nav-item"><a class="nav-link p-1 text-secondary" href="#docCredits">7. Credits &amp; Dependencies</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Main Documentation Content -->
+      <div class="col-lg-9">
+        
+        <!-- 1. Intro -->
+        <section id="docIntro" class="doc-section">
+          <h2 class="fw-bold text-primary mb-3">1. Introduction &amp; Overview</h2>
+          <p class="lead text-secondary">
+            <strong>HOMEHAVEN WATCH</strong> is a complete, premium, production-quality HTML5 website template built specifically for professional vacation home watch, property check, and seasonal residential care businesses.
+          </p>
+          <div class="haven-card">
+            <h5 class="fw-bold text-primary mb-2">Key Highlights:</h5>
+            <ul class="card-checklist small mb-0">
+              <li><i class="bi bi-check-circle-fill text-primary"></i> <strong>28 Full HTML Pages:</strong> Dual distinct homepages, 7 dedicated service pages, pricing matrix, checklists, guides, and auth mockups.</li>
+              <li><i class="bi bi-check-circle-fill text-primary"></i> <strong>Full Light &amp; Dark Mode:</strong> Persistent theme switching using `localStorage` and system preference detection.</li>
+              <li><i class="bi bi-check-circle-fill text-primary"></i> <strong>Interactive Components:</strong> Live checklist completion meter with print stylesheet, pricing cadence toggle, and FAQ live search.</li>
+              <li><i class="bi bi-check-circle-fill text-primary"></i> <strong>Zero Framework Overhead:</strong> Built purely with HTML5, Bootstrap 5.3, Vanilla CSS3, Vanilla JS, and GSAP.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 2. File Structure -->
+        <section id="docStructure" class="doc-section">
+          <h2 class="fw-bold text-primary mb-3">2. File &amp; Folder Structure</h2>
+          <pre><code>home-watch-service/
+├── index.html                    # Homepage 1 (Classic Trust &amp; Service-Led)
+├── home-2.html                   # Homepage 2 (Editorial Care &amp; Philosophy)
+├── services.html                 # Comprehensive Services Directory
+├── vacant-home-checks.html       # Service: Vacant Home Checks
+├── mail-collection.html          # Service: Mail &amp; Delivery Management
+├── storm-preparation.html        # Service: Severe Storm Preparation
+├── post-storm-checks.html        # Service: Post-Storm Visual Review
+├── exterior-checks.html          # Service: Exterior &amp; Perimeter Checks
+├── interior-checks.html          # Service: Interior Systems Review
+├── service-details.html          # Service: Detailed Deep-Dive Template
+├── how-it-works.html             # 4-Stage Process &amp; Visual Report Mockup
+├── pricing.html                  # Tiered Pricing &amp; Comparison Table
+├── service-areas.html            # Coverage Regions &amp; Enclaves
+├── area-details.html             # Area Spotlight (Haven Bay)
+├── about.html                    # Company Story, Standards &amp; Team
+├── resources.html                # Resource Hub &amp; Guides Index
+├── property-watch-checklist.html # Interactive &amp; Printable Checklist Tool
+├── seasonal-preparation.html     # Seasonal Departure &amp; Winterization Guide
+├── storm-preparation-guide.html  # Severe Weather Readiness Protocol
+├── faqs.html                     # Searchable &amp; Filterable FAQ Accordion
+├── blog.html                     # Insights Journal with Category Tabs
+├── blog-details.html             # Editorial Post with Sidebar Table of Contents
+├── contact.html                  # Property Check Inquiry Form with Map
+├── dashboard.html                # Homeowner Portal (Scheduling, Reports & Photos, Mail, Billing)
+├── login.html                    # Client Login Demonstration
+├── signup.html                   # Account Registration Demonstration
+├── forgot-password.html          # Password Reset Demonstration
+├── 404.html                      # Custom 404 Error Page
+├── coming-soon.html              # Launch Teaser &amp; Email Signup
+├── assets/
+│   ├── css/
+│   │   └── style.css             # Master Stylesheet, CSS Variables & Full RTL Support
+│   ├── js/
+│   │   └── main.js               # Theme, RTL Engine, Dashboard Tabs, Validations, Animations
+│   └── images/                   # High-Fidelity SVG Illustrations &amp; Icons
+├── documentation/
+│   └── index.html                # Template Documentation
+└── README.md                     # Markdown Project Overview</code></pre>
+        </section>
+
+        <!-- 3. CSS Variables -->
+        <section id="docColors" class="doc-section">
+          <h2 class="fw-bold text-primary mb-3">3. Color Palette &amp; CSS Custom Properties</h2>
+          <p class="text-secondary">
+            All brand colors and typography variables are configured at the top of <code>assets/css/style.css</code> in the <code>:root</code> selector.
+          </p>
+          <pre><code>:root {
+  /* Brand Primary Colors */
+  --brand-navy: #122232;
+  --brand-navy-light: #1D344B;
+  --brand-sage: #2C5E47;
+  --brand-brass: #C29627;
+  --brand-brass-glow: rgba(194, 150, 39, 0.25);
+
+  /* Surfaces &amp; Text */
+  --bg-primary: #FAFAF7;
+  --bg-surface: #FFFFFF;
+  --text-primary: #14202E;
+  --text-secondary: #4A5B6D;
+  --border-color: rgba(20, 32, 46, 0.1);
+
+  /* Typography */
+  --font-heading: 'Manrope', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-serif: 'DM Serif Display', serif;
+}</code></pre>
+        </section>
+
+        <!-- 4. Theme System -->
+        <section id="docThemes" class="doc-section">
+          <h2 class="fw-bold text-primary mb-3">4. Light &amp; Dark Theme Engine</h2>
+          <p class="text-secondary">
+            The theme toggle in <code>main.js</code> sets <code>data-bs-theme="dark"</code> on the root <code>&lt;html&gt;</code> element and saves the state in <code>localStorage</code> under <code>'homehaven_theme'</code>.
+          </p>
+        </section>
+
+        <!-- 5. Interactive Components -->
+        <section id="docComponents" class="doc-section">
+          <h2 class="fw-bold text-primary mb-3">5. Core Interactive Components</h2>
+          <ul class="card-checklist">
+            <li><i class="bi bi-check2"></i> <strong>Interactive Checklist:</strong> Real-time percentage counter automatically updates upon clicking any item on <code>property-watch-checklist.html</code>.</li>
+            <li><i class="bi bi-check2"></i> <strong>Dynamic Pricing Toggle:</strong> Toggles between bi-weekly, weekly, and monthly rates via <code>data-frequency</code> attributes.</li>
+            <li><i class="bi bi-check2"></i> <strong>FAQ Search &amp; Category Filter:</strong> Filters questions instantly as the user types or clicks category buttons.</li>
+            <li><i class="bi bi-check2"></i> <strong>Accessible Navigation:</strong> Sticky blur navbar with ESC key and outside-click mobile collapse handlers.</li>
+          </ul>
+        </section>
+
+        <!-- 6. Form Validations -->
+        <section id="docForms" class="doc-section">
+          <h2 class="fw-bold text-primary mb-3">6. Form Validation &amp; Feedback</h2>
+          <p class="text-secondary">
+            All inquiry and authentication forms include HTML5 client-side validation styled with Bootstrap classes. Submitting valid forms displays accessible feedback alerts without requiring an active backend or directing to fake dashboards.
+          </p>
+        </section>
+
+        <!-- 7. Credits -->
+        <section id="docCredits" class="doc-section">
+          <h2 class="fw-bold text-primary mb-3">7. Credits &amp; Third-Party Libraries</h2>
+          <ul class="card-checklist">
+            <li><i class="bi bi-code-slash text-primary"></i> <a href="https://getbootstrap.com" target="_blank" rel="noopener">Bootstrap 5.3.3</a></li>
+            <li><i class="bi bi-code-slash text-primary"></i> <a href="https://icons.getbootstrap.com" target="_blank" rel="noopener">Bootstrap Icons 1.11.3</a></li>
+            <li><i class="bi bi-code-slash text-primary"></i> <a href="https://greensock.com/gsap" target="_blank" rel="noopener">GSAP (GreenSock Animation Platform) 3.12.5</a></li>
+            <li><i class="bi bi-code-slash text-primary"></i> <a href="https://fonts.google.com" target="_blank" rel="noopener">Google Fonts: Manrope, DM Sans, DM Serif Display</a></li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="py-4 bg-subtle border-top border-secondary-subtle text-center small text-muted">
+    <div class="container">
+      &copy; 2026 HOMEHAVEN WATCH. All rights reserved. | Professional Website Template
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

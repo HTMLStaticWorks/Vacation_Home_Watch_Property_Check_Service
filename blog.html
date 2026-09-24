@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insights &amp; Property Care Journal — HOMEHAVEN WATCH</title>
+  <meta name="description" content="Helpful articles on vacation home stewardship, seasonal departure advice, severe storm readiness, leak awareness, and second home care best practices.">
+  <meta name="keywords" content="vacation home blog, second home care articles, property watch advice, seasonal home maintenance insights">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="shortcut icon" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-xl sticky-top haven-navbar" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand-wrapper" href="index.html">
+        <div class="brand-icon-box"><i class="bi bi-shield-check"></i></div>
+        <span class="brand-title">HOMEHAVEN WATCH</span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHavenNav" aria-controls="navbarHavenNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2 text-primary"></i>
+      </button>
+
+      <!-- Nav Links & Dropdowns -->
+      <div class="collapse navbar-collapse" id="navbarHavenNav">
+        <ul class="navbar-nav ms-auto me-xl-3 mb-2 mb-lg-0">
+          
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle haven-nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu haven-dropdown-menu">
+              <li><a class="dropdown-item haven-dropdown-item " href="index.html"><i class="bi bi-house-door"></i> Home 1 (Classic Trust)</a></li>
+              <li><a class="dropdown-item haven-dropdown-item " href="home-2.html"><i class="bi bi-building"></i> Home 2 (Editorial Care)</a></li>
+            </ul>
+          </li>
+
+          <!-- Services (Direct Link - No Dropdown) -->
+          <li class="nav-item">
+            <a class="nav-link haven-nav-link " href="services.html">Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link haven-nav-link " href="how-it-works.html">How It Works</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link haven-nav-link " href="about.html">About</a>
+          </li>
+
+          <!-- Resources Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle haven-nav-link active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdown-menu haven-dropdown-menu">
+              <li><a class="dropdown-item haven-dropdown-item " href="resources.html"><i class="bi bi-folder2-open"></i> Resource Hub</a></li>
+              <li><a class="dropdown-item haven-dropdown-item " href="property-watch-checklist.html"><i class="bi bi-check2-square"></i> Property Watch Checklist</a></li>
+              <li><a class="dropdown-item haven-dropdown-item " href="seasonal-preparation.html"><i class="bi bi-calendar-range"></i> Seasonal Preparation</a></li>
+              <li><a class="dropdown-item haven-dropdown-item " href="storm-preparation-guide.html"><i class="bi bi-shield-exclamation"></i> Storm Preparation Guide</a></li>
+              <li><a class="dropdown-item haven-dropdown-item " href="faqs.html"><i class="bi bi-question-circle"></i> FAQs</a></li>
+              <li><a class="dropdown-item haven-dropdown-item active" href="blog.html"><i class="bi bi-journal-text"></i> Insights &amp; Blog</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link haven-nav-link " href="contact.html">Contact</a>
+          </li>
+
+          <!-- Dashboard Menu (Beside Contact) -->
+          <li class="nav-item">
+            <a class="nav-link haven-nav-link " href="dashboard.html">Dashboard</a>
+          </li>
+        </ul>
+
+        <!-- Right Side Controls: RTL Button, Theme Toggle, Sign Up Button -->
+        <div class="d-flex align-items-center gap-2 mt-3 mt-xl-0">
+          <button type="button" class="theme-toggle-btn rtl-toggle-btn" aria-label="Toggle RTL layout" title="Toggle RTL">RTL</button>
+          <button type="button" class="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Toggle theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <a href="signup.html" class="btn btn-haven-primary btn-sm-custom">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="py-5 bg-surface border-bottom border-secondary-subtle">
+    <div class="container py-4 text-center max-w-800 mx-auto">
+      <div class="eyebrow-badge badge-brass">
+        <i class="bi bi-journal-text"></i> Educational Articles
+      </div>
+      <h1 class="display-4 fw-bold text-primary mb-3">Homeowner Insights &amp; Journal</h1>
+      <p class="lead text-secondary mb-4">
+        Practical advice on second-home stewardship, seasonal weather preparation, smart climate control, and vacant property management.
+      </p>
+
+      <div class="input-group max-w-500 mx-auto shadow-sm">
+        <span class="input-group-text bg-surface border-end-0 text-muted"><i class="bi bi-search"></i></span>
+        <input type="text" class="form-control border-start-0 ps-0" id="blogSearchInput" placeholder="Search insights..." aria-label="Search articles">
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Blog Feed -->
+  <main class="section-padding bg-subtle">
+    <div class="container">
+      
+      <!-- Category Filters -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
+        <button type="button" class="btn btn-haven-secondary btn-sm-custom blog-category-btn active" data-category="all">All Articles</button>
+        <button type="button" class="btn btn-haven-secondary btn-sm-custom blog-category-btn" data-category="vacation">Vacation Homes</button>
+        <button type="button" class="btn btn-haven-secondary btn-sm-custom blog-category-btn" data-category="seasonal">Seasonal Preparation</button>
+        <button type="button" class="btn btn-haven-secondary btn-sm-custom blog-category-btn" data-category="storm">Storm Readiness</button>
+        <button type="button" class="btn btn-haven-secondary btn-sm-custom blog-category-btn" data-category="maintenance">Maintenance Awareness</button>
+      </div>
+
+      <!-- Featured Article Spotlight -->
+      <div class="bg-surface rounded-4 overflow-hidden border border-secondary-subtle shadow-md mb-5">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-7">
+            <img src="assets/images/blog/blog-1.svg" alt="Featured blog cover" class="w-100 h-auto" style="min-height: 320px; object-fit: cover;">
+          </div>
+          <div class="col-lg-5 p-4 p-md-5">
+            <span class="blog-meta-tag">Featured Guide • Vacation Homes</span>
+            <h2 class="display-6 fw-bold text-primary mb-3">
+              <a href="blog-details.html" class="text-primary text-decoration-none">7 Visible Signs Vacation Homeowners Should Check Before Departing</a>
+            </h2>
+            <p class="text-secondary small mb-4">
+              From water supply lines under sinks to exterior deadbolt alignment, here are the essential visual indicators that give you true peace of mind while away.
+            </p>
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top border-secondary-subtle">
+              <span class="small text-muted"><i class="bi bi-clock me-1"></i> 5 Min Read</span>
+              <a href="blog-details.html" class="btn btn-haven-brass btn-sm-custom">Read Article</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article Grid -->
+      <div class="row g-4">
+        
+        <!-- Article 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="blog-card blog-article-item" data-category="seasonal">
+            <div class="blog-thumb-wrap">
+              <img src="assets/images/blog/blog-2.svg" alt="Seasonal departure guide">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-meta-tag">Seasonal Preparation</span>
+              <h4 class="blog-title"><a href="blog-details.html">Winterizing Your Second Home: Avoiding the Deep Freeze Surprise</a></h4>
+              <p class="text-secondary small">Key thermostat settings, outdoor hose bibb disconnection, and pipe freeze prevention protocols.</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top border-secondary-subtle small text-muted">
+                <span>Sep 20, 2026</span>
+                <span>4 Min Read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="blog-card blog-article-item" data-category="storm">
+            <div class="blog-thumb-wrap">
+              <img src="assets/images/blog/blog-3.svg" alt="Storm readiness advice">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-meta-tag">Storm Readiness</span>
+              <h4 class="blog-title"><a href="blog-details.html">High-Wind Preparation: Securing Patio Accessories &amp; Shutters</a></h4>
+              <p class="text-secondary small">How to tie down lightweight outdoor furniture and verify window shutter latches before tropical squalls.</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top border-secondary-subtle small text-muted">
+                <span>Sep 14, 2026</span>
+                <span>6 Min Read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="blog-card blog-article-item" data-category="maintenance">
+            <div class="blog-thumb-wrap">
+              <img src="assets/images/blog/blog-4.svg" alt="Vendor access management">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-meta-tag">Maintenance Awareness</span>
+              <h4 class="blog-title"><a href="blog-details.html">How to Safely Coordinate Local Vendor Access From Another State</a></h4>
+              <p class="text-secondary small">Key custody standards, contractor oversight, and post-service visual walkthrough verification.</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top border-secondary-subtle small text-muted">
+                <span>Sep 08, 2026</span>
+                <span>5 Min Read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="blog-card blog-article-item" data-category="vacation">
+            <div class="blog-thumb-wrap">
+              <img src="assets/images/properties/lake-house.svg" alt="Lakefront vacation property">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-meta-tag">Vacation Homes</span>
+              <h4 class="blog-title"><a href="blog-details.html">The Unique Vulnerabilities of Unattended Lakefront Properties</a></h4>
+              <p class="text-secondary small">Managing shoreline humidity, dock observations, and seasonal water line closures.</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top border-secondary-subtle small text-muted">
+                <span>Aug 28, 2026</span>
+                <span>4 Min Read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="blog-card blog-article-item" data-category="maintenance">
+            <div class="blog-thumb-wrap">
+              <img src="assets/images/inspections/hvac-meter.svg" alt="Thermostat smart settings">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-meta-tag">Maintenance Awareness</span>
+              <h4 class="blog-title"><a href="blog-details.html">Why Smart Thermostats Still Benefit From Physical Visual Checks</a></h4>
+              <p class="text-secondary small">Why Wi-Fi sensors miss physical water seepage, frozen condensate drains, or power breaker trips.</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top border-secondary-subtle small text-muted">
+                <span>Aug 19, 2026</span>
+                <span>5 Min Read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 7 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="blog-card blog-article-item" data-category="seasonal">
+            <div class="blog-thumb-wrap">
+              <img src="assets/images/properties/mountain-cabin.svg" alt="Mountain cabin property">
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-meta-tag">Seasonal Preparation</span>
+              <h4 class="blog-title"><a href="blog-details.html">Alpine Cabin Pre-Season Checklist: Snowpack &amp; Roofline Care</a></h4>
+              <p class="text-secondary small">Ground-level visual observation tips for high-altitude winter vacation retreats.</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top border-secondary-subtle small text-muted">
+                <span>Aug 10, 2026</span>
+                <span>6 Min Read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pagination -->
+      <nav class="mt-5" aria-label="Blog pagination">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">Previous</a></li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="haven-footer">
+    <div class="container">
+      <div class="row g-4">
+        
+        <!-- Column 1: Brand Info & Social Icons -->
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="brand-icon-box" style="width: 36px; height: 36px;">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <span class="brand-title">HOMEHAVEN WATCH</span>
+          </div>
+          <p class="small text-secondary mb-3">
+            Professional property checks and visual care for vacant, seasonal, and vacation residences. Peace of mind while you're away.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="X Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Services -->
+        <div class="col-lg-2 col-md-6">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="vacant-home-checks.html">Vacant Home Checks</a></li>
+            <li><a href="mail-collection.html">Mail Collection</a></li>
+            <li><a href="storm-preparation.html">Storm Preparation</a></li>
+            <li><a href="post-storm-checks.html">Post-Storm Checks</a></li>
+            <li><a href="exterior-checks.html">Exterior Checks</a></li>
+            <li><a href="interior-checks.html">Interior Checks</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Resources -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Resources</h5>
+          <ul class="footer-links">
+            <li><a href="property-watch-checklist.html">Property Watch Checklist</a></li>
+            <li><a href="seasonal-preparation.html">Seasonal Preparation Guide</a></li>
+            <li><a href="storm-preparation-guide.html">Storm Preparation Protocol</a></li>
+            <li><a href="faqs.html">Frequently Asked Questions</a></li>
+            <li><a href="blog.html">Homeowner Insights Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Company -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Homehaven</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="pricing.html">Pricing &amp; Plans</a></li>
+            <li><a href="service-areas.html">Service Regions</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Service Disclaimer Callout -->
+      <div class="footer-disclaimer-box">
+        <p class="mb-1"><strong>Service Disclaimer:</strong> Homehaven Watch provides non-invasive visual property observation and assistance services. Our visits do not replace licensed home inspections, structural engineering, licensed electrical/plumbing trades, security guard services, or municipal emergency services. For active emergencies or structural hazards, contact local emergency authorities.</p>
+        <p class="mb-0">Template demonstration purposes only. Fictional brand name.</p>
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 HOMEHAVEN WATCH. All rights reserved.
+        </div>
+        <div class="d-flex gap-3">
+          <a href="resources.html" class="text-secondary text-decoration-none">Privacy Policy</a>
+          <a href="resources.html" class="text-secondary text-decoration-none">Terms of Service</a>
+          <a href="documentation/index.html" class="text-secondary text-decoration-none">Documentation</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top-btn" aria-label="Scroll back to top"><i class="bi bi-arrow-up-short fs-4"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgInsp2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142232" />
+      <stop offset="100%" stop-color="#0E1722" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgInsp2)" />
+  <rect x="120" y="80" width="560" height="440" rx="16" fill="#18293C" stroke="#486581" stroke-width="2" />
+  <!-- Interior Room Living Area Silhouette -->
+  <polygon points="160,460 300,320 500,320 640,460" fill="#20364F" />
+  <rect x="320" y="240" width="160" height="120" fill="#0D1926" stroke="#C29627" stroke-width="2" />
+  <!-- Ceiling Light / Visual sensor scan -->
+  <line x1="400" y1="120" x2="400" y2="200" stroke="#C29627" stroke-width="3" />
+  <circle cx="400" cy="205" r="8" fill="#FFDA79" />
+  <!-- Checklist Badge -->
+  <g transform="translate(160, 120)">
+    <rect width="200" height="40" rx="20" fill="#1C3044" stroke="#2C5E47" stroke-width="2" />
+    <text x="25" y="25" fill="#6EE7B7" font-family="'DM Sans', sans-serif" font-size="13" font-weight="700">✓ Interior Scan Normal</text>
+  </g>
+  <g transform="translate(420, 440)">
+    <rect width="220" height="40" rx="8" fill="#2C5E47" />
+    <text x="20" y="25" fill="#FFFFFF" font-family="'DM Sans', sans-serif" font-size="13" font-weight="700">No Visible Leaks or Odors</text>
+  </g>
+</svg>

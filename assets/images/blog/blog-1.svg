@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="blogBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#192A3C" />
+      <stop offset="100%" stop-color="#0F1B27" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#blogBg1)" />
+  <circle cx="400" cy="220" r="130" fill="#20364C" stroke="#C29627" stroke-width="2" />
+  <!-- House outline with magnifying glass -->
+  <polygon points="330,220 400,160 470,220" fill="#2C5E47" />
+  <rect x="350" y="220" width="100" height="70" fill="#ECEFF1" />
+  <circle cx="450" cy="260" r="45" fill="none" stroke="#C29627" stroke-width="6" />
+  <line x1="482" y1="292" x2="520" y2="330" stroke="#C29627" stroke-width="8" stroke-linecap="round" />
+  <!-- Caption tag -->
+  <g transform="translate(250, 400)">
+    <rect width="300" height="40" rx="20" fill="#2C5E47" />
+    <text x="150" y="25" text-anchor="middle" fill="#FFFFFF" font-family="'Manrope', sans-serif" font-size="13" font-weight="700">VACANT PROPERTY ESSENTIALS</text>
+  </g>
+</svg>

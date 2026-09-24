@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="estateSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DEEAF6" />
+      <stop offset="100%" stop-color="#F7F9FA" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#estateSky)" />
+  <rect x="0" y="420" width="800" height="180" fill="#4B7B5B" />
+  <!-- Suburban Second Home Estate -->
+  <g transform="translate(140, 160)">
+    <rect x="80" y="140" width="360" height="150" fill="#ECEFF1" stroke="#CFD8DC" stroke-width="2" />
+    <polygon points="60,140 260,30 460,140" fill="#37474F" />
+    <!-- Pillars -->
+    <rect x="130" y="160" width="16" height="130" fill="#FFFFFF" />
+    <rect x="370" y="160" width="16" height="130" fill="#FFFFFF" />
+    <!-- Front Door with transom -->
+    <rect x="230" y="170" width="60" height="120" fill="#1A2530" />
+    <circle cx="280" cy="235" r="4" fill="#C29627" />
+    <!-- Windows -->
+    <rect x="110" y="170" width="60" height="80" fill="#263238" />
+    <rect x="350" y="170" width="60" height="80" fill="#263238" />
+  </g>
+</svg>
