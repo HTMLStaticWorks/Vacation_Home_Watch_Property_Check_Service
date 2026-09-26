@@ -299,14 +299,26 @@ img {
   box-shadow: var(--shadow-sm);
   transition: all var(--transition-base);
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
 .btn-haven-primary:hover {
   background-color: var(--brand-navy-light);
   border-color: var(--brand-navy-light);
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 8px 22px rgba(18, 34, 50, 0.28);
   color: #FFFFFF !important;
+}
+
+.btn-haven-primary:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-xs);
+}
+
+.btn-haven-primary:hover i {
+  transform: translateX(2px);
+  transition: transform var(--transition-fast);
 }
 
 .btn-haven-secondary {
@@ -328,9 +340,20 @@ img {
 
 .btn-haven-secondary:hover {
   background-color: var(--bg-subtle);
-  border-color: var(--text-primary);
-  color: var(--text-primary);
+  border-color: var(--brand-navy);
+  color: var(--brand-navy);
   transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+[data-bs-theme="dark"] .btn-haven-secondary:hover {
+  border-color: var(--brand-brass);
+  color: #FFFFFF;
+  background-color: var(--bg-subtle-2);
+}
+
+.btn-haven-secondary:active {
+  transform: translateY(0);
 }
 
 .bg-navy .btn-haven-secondary,
@@ -341,9 +364,11 @@ img {
 
 .bg-navy .btn-haven-secondary:hover,
 .bg-navy .btn-outline-light:hover {
-  background-color: rgba(255, 255, 255, 0.15) !important;
+  background-color: rgba(255, 255, 255, 0.18) !important;
   border-color: #FFFFFF !important;
   color: #FFFFFF !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
 }
 
 .btn-haven-brass {
@@ -362,13 +387,26 @@ img {
   box-shadow: 0 4px 14px var(--brand-brass-glow);
   transition: all var(--transition-base);
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
 .btn-haven-brass:hover {
   background-color: var(--brand-brass-light);
   border-color: var(--brand-brass-light);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px var(--brand-brass-glow);
+  box-shadow: 0 8px 24px var(--brand-brass-glow);
+  color: #0A141E !important;
+}
+
+.btn-haven-brass:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px var(--brand-brass-glow);
+}
+
+.btn-haven-brass:hover i {
+  transform: translateX(2px);
+  transition: transform var(--transition-fast);
 }
 
 .btn-haven-sage {
@@ -391,19 +429,153 @@ img {
 
 .btn-haven-sage:hover {
   background-color: var(--brand-sage-light);
+  border-color: var(--brand-sage-light);
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 8px 22px rgba(44, 94, 71, 0.3);
   color: #FFFFFF !important;
 }
 
-.btn-sm-custom {
-  padding: 0.5rem 1.1rem;
-  font-size: 0.85rem;
+.btn-haven-sage:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-xs);
+}
+
+.btn-sm-custom,
+.btn-haven-primary.btn-sm,
+.btn-haven-secondary.btn-sm,
+.btn-haven-brass.btn-sm,
+.btn-haven-sage.btn-sm,
+.btn.btn-sm {
+  padding: 0.45rem 0.95rem !important;
+  font-size: 0.85rem !important;
+  line-height: 1.35;
+  white-space: normal;
+  text-align: center;
 }
 
 .btn-lg-custom {
   padding: 0.95rem 2.2rem;
   font-size: 1.05rem;
+}
+
+/* Link Button with Interactive Hover Effect (e.g. FAQ & Policies Button) */
+.haven-link-btn,
+.btn-haven-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--brand-navy) !important;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.98rem;
+  text-decoration: none !important;
+  padding: 0.75rem 1.65rem;
+  border-radius: var(--radius-full);
+  background-color: var(--bg-surface);
+  border: 1.5px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+  cursor: pointer;
+}
+
+.haven-link-btn:hover,
+.btn-haven-link:hover {
+  background-color: var(--brand-navy);
+  color: #FFFFFF !important;
+  border-color: var(--brand-navy);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(18, 34, 50, 0.22);
+}
+
+.haven-link-btn i,
+.btn-haven-link i {
+  color: var(--brand-sage);
+  transition: transform var(--transition-smooth), color var(--transition-fast);
+}
+
+.haven-link-btn:hover i,
+.btn-haven-link:hover i {
+  transform: translateX(5px);
+  color: var(--brand-brass-light) !important;
+}
+
+.haven-link-btn:active,
+.btn-haven-link:active {
+  transform: translateY(-1px);
+}
+
+[data-bs-theme="dark"] .haven-link-btn,
+[data-bs-theme="dark"] .btn-haven-link {
+  background-color: var(--bg-surface-elevated);
+  border-color: var(--border-color);
+  color: #FFFFFF !important;
+}
+
+[data-bs-theme="dark"] .haven-link-btn:hover,
+[data-bs-theme="dark"] .btn-haven-link:hover {
+  background-color: var(--brand-brass);
+  color: #0B131C !important;
+  border-color: var(--brand-brass);
+  box-shadow: 0 8px 24px var(--brand-brass-glow);
+}
+
+[data-bs-theme="dark"] .haven-link-btn i,
+[data-bs-theme="dark"] .btn-haven-link i {
+  color: var(--brand-brass);
+}
+
+[data-bs-theme="dark"] .haven-link-btn:hover i,
+[data-bs-theme="dark"] .btn-haven-link:hover i {
+  color: #0B131C !important;
+}
+
+/* Badge Utilities & Hero Photo Overlay Panel (Ensures High Contrast & Legibility in Light/Dark Mode) */
+.bg-sage {
+  background-color: var(--brand-sage) !important;
+  color: #FFFFFF !important;
+}
+
+.hero-overlay-panel {
+  background: linear-gradient(180deg, rgba(8, 14, 21, 0) 0%, rgba(8, 14, 21, 0.75) 30%, rgba(8, 14, 21, 0.94) 100%) !important;
+  color: #FFFFFF !important;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+.hero-overlay-panel p,
+.hero-overlay-panel span,
+.hero-overlay-panel div {
+  color: #FFFFFF;
+}
+
+.hero-overlay-panel p {
+  color: #F4F7FB !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85);
+  font-weight: 500;
+}
+
+.hero-overlay-panel .badge {
+  background-color: var(--brand-sage) !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.hero-overlay-btn {
+  background-color: #FFFFFF !important;
+  color: var(--brand-navy) !important;
+  border: 1px solid rgba(255, 255, 255, 0.9) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+  transition: all var(--transition-base);
+}
+
+.hero-overlay-btn:hover {
+  background-color: var(--brand-brass) !important;
+  color: #0A141E !important;
+  border-color: var(--brand-brass) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px var(--brand-brass-glow);
 }
 
 /* --------------------------------------------------------------------------
@@ -1327,6 +1499,112 @@ img {
   max-width: 480px;
   position: relative;
   z-index: 2;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.auth-card:hover {
+  box-shadow: var(--shadow-xl), 0 0 0 1px var(--border-color-hover);
+}
+
+/* Auth Primary Submit Buttons Hover */
+.auth-card .btn-haven-primary.auth-submit-btn:hover,
+.auth-card .btn-haven-brass.auth-submit-btn:hover {
+  transform: translateY(-3px);
+}
+
+.auth-card .btn-haven-primary.auth-submit-btn:hover {
+  box-shadow: 0 12px 28px rgba(18, 34, 50, 0.35);
+  background: linear-gradient(135deg, var(--brand-navy-light) 0%, var(--brand-navy) 100%);
+}
+
+.auth-card .btn-haven-brass.auth-submit-btn:hover {
+  box-shadow: 0 12px 30px var(--brand-brass-glow);
+  background: linear-gradient(135deg, var(--brand-brass-light) 0%, var(--brand-brass) 100%);
+}
+
+.auth-card .btn-haven-primary.auth-submit-btn:active,
+.auth-card .btn-haven-brass.auth-submit-btn:active {
+  transform: translateY(-1px);
+}
+
+/* Social Login Buttons Hover */
+.auth-social-btn {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-weight: 600;
+  transition: all var(--transition-base);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 1rem;
+}
+
+.auth-social-btn:hover {
+  background-color: var(--bg-subtle);
+  border-color: var(--brand-navy);
+  color: var(--brand-navy);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.auth-social-btn:hover i {
+  transform: scale(1.18);
+  transition: transform var(--transition-fast);
+}
+
+[data-bs-theme="dark"] .auth-social-btn {
+  background-color: var(--bg-subtle);
+  border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .auth-social-btn:hover {
+  background-color: var(--bg-subtle-2);
+  border-color: var(--brand-brass);
+  color: #FFFFFF;
+}
+
+/* Sign In / Sign Up Switch Link Hover */
+.auth-switch-link,
+.auth-card a.auth-switch-link {
+  color: var(--brand-sage);
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+.auth-switch-link:hover,
+.auth-card a.auth-switch-link:hover {
+  color: var(--brand-sage-light);
+  background-color: var(--brand-sage-subtle);
+  transform: translateY(-1px);
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(44, 94, 71, 0.15);
+}
+
+[data-bs-theme="dark"] .auth-switch-link,
+[data-bs-theme="dark"] .auth-card a.auth-switch-link {
+  color: var(--brand-brass);
+}
+
+[data-bs-theme="dark"] .auth-switch-link:hover,
+[data-bs-theme="dark"] .auth-card a.auth-switch-link:hover {
+  color: var(--brand-brass-light);
+  background-color: var(--brand-brass-subtle);
+  box-shadow: 0 2px 6px var(--brand-brass-glow);
+}
+
+/* Password Toggle Button Hover */
+.password-toggle-btn {
+  transition: all var(--transition-fast);
+}
+
+.password-toggle-btn:hover {
+  background-color: var(--bg-subtle) !important;
+  color: var(--brand-navy) !important;
+  border-color: var(--border-color-hover) !important;
 }
 
 .auth-divider {
@@ -2029,6 +2307,73 @@ img {
 
   .dashboard-body-content {
     padding: 1.25rem;
+  }
+}
+
+/* Dashboard Responsive Optimizations for Tablets and Mobile Phones */
+@media (max-width: 767.98px) {
+  .dashboard-body-content {
+    padding: 1rem 0.75rem;
+  }
+
+  .dash-panel-card {
+    padding: 1.25rem 1rem;
+    border-radius: var(--radius-md);
+  }
+
+  .dash-panel-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .dash-panel-header > div:first-child {
+    width: 100%;
+  }
+
+  .dash-panel-card .p-4 {
+    padding: 1.15rem 0.9rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .dash-panel-card {
+    padding: 1rem 0.85rem;
+  }
+
+  .dash-panel-card .p-4 {
+    padding: 1rem 0.75rem !important;
+  }
+
+  .dash-panel-card .btn,
+  .dash-panel-card a.btn {
+    white-space: normal !important;
+    text-align: center;
+    word-break: normal;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .dash-panel-card .btn-haven-primary,
+  .dash-panel-card .btn-haven-secondary,
+  .dash-panel-card .btn-haven-brass,
+  .dash-panel-card .btn-haven-sage {
+    font-size: 0.84rem;
+    padding: 0.5rem 0.85rem !important;
+    flex-grow: 1;
+  }
+
+  .dash-panel-card .d-flex.gap-2,
+  .dash-panel-card .d-flex.flex-wrap {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .dash-panel-card .d-flex.gap-2 > .btn,
+  .dash-panel-card .d-flex.gap-2 > a.btn,
+  .dash-panel-card .d-flex.flex-wrap > .btn,
+  .dash-panel-card .d-flex.flex-wrap > a.btn {
+    width: 100%;
   }
 }
 
