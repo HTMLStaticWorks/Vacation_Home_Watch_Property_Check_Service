@@ -535,11 +535,85 @@ img {
   color: #FFFFFF !important;
 }
 
+/* Hero Photography Container & Framing (Home 2) */
+.hero-photo-container {
+  position: relative;
+  width: 100%;
+  height: 330px;
+  min-height: 280px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  background-color: var(--bg-subtle-2);
+}
+
+.hero-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  transition: transform var(--transition-smooth);
+}
+
+.hero-photo-container:hover .hero-photo-img {
+  transform: scale(1.03);
+}
+
+@media (min-width: 576px) {
+  .hero-photo-container {
+    height: 390px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-photo-container {
+    height: 480px;
+    max-height: 520px;
+  }
+}
+
+/* Hero Overlay Panel (Live Inspection Status Badge) */
 .hero-overlay-panel {
-  background: linear-gradient(180deg, rgba(8, 14, 21, 0) 0%, rgba(8, 14, 21, 0.75) 30%, rgba(8, 14, 21, 0.94) 100%) !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(180deg, rgba(8, 14, 21, 0) 0%, rgba(8, 14, 21, 0.45) 45%, rgba(8, 14, 21, 0.88) 100%) !important;
   color: #FFFFFF !important;
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
+  z-index: 2;
+  transition: all var(--transition-base);
+}
+
+@media (min-width: 768px) {
+  .hero-overlay-panel {
+    padding: 1.25rem 1.5rem;
+    background: linear-gradient(180deg, rgba(8, 14, 21, 0) 0%, rgba(8, 14, 21, 0.5) 40%, rgba(8, 14, 21, 0.9) 100%) !important;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-overlay-panel {
+    padding: 0.6rem 0.85rem !important;
+  }
+  
+  .hero-overlay-panel .badge {
+    font-size: 0.72rem !important;
+    padding: 0.3em 0.55em !important;
+  }
+  
+  .hero-overlay-panel p {
+    font-size: 0.75rem !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .hero-overlay-btn {
+    font-size: 0.75rem !important;
+    padding: 0.25rem 0.65rem !important;
+  }
 }
 
 .hero-overlay-panel p,
@@ -1064,6 +1138,30 @@ img {
   padding-top: 0.5rem;
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 575.98px) {
+  .floating-hero-card {
+    bottom: 12px;
+    right: 12px;
+    padding: 0.85rem;
+    max-width: 230px;
+  }
+  
+  .floating-hero-header {
+    font-size: 0.72rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .floating-hero-list {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .floating-hero-footer {
+    font-size: 0.65rem;
+    padding-top: 0.35rem;
+  }
 }
 
 /* --------------------------------------------------------------------------
