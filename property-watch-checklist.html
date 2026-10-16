@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
 <head>
   <meta charset="UTF-8">
@@ -93,18 +93,18 @@
     </div>
   </nav>
 
-  <!-- Hero Header -->
-  <header class="py-5 bg-surface border-bottom border-secondary-subtle">
-    <div class="container py-4 text-center max-w-800 mx-auto">
-      <div class="eyebrow-badge badge-brass">
+  <!-- Hero Header (Consistent Height & Visual Impact - Requirement 18) -->
+  <header class="page-hero hero-bg-checklist text-center">
+    <div class="container text-center max-w-800 mx-auto">
+      <div class="eyebrow-badge badge-sage mb-3">
         <i class="bi bi-check2-square"></i> Interactive Tool
       </div>
-      <h1 class="display-4 fw-bold text-primary mb-3">Homeowner Departure Checklist</h1>
-      <p class="lead text-secondary mb-4">
+      <h1 class="display-4 fw-bold text-white mb-3">Homeowner Departure Checklist</h1>
+      <p class="lead text-white-50 mb-4">
         A practical interactive checklist to help you prepare your seasonal or vacation home before departing. Track your progress in real time or print a copy for your property binder.
       </p>
       <div class="d-flex justify-content-center gap-2 no-print">
-        <button type="button" class="btn btn-haven-brass btn-sm-custom" onclick="window.print()">
+        <button type="button" class="btn btn-haven-sage btn-sm-custom" onclick="window.print()">
           <i class="bi bi-printer"></i> Print Checklist
         </button>
         <button type="button" class="btn btn-haven-secondary btn-sm-custom" id="resetChecklistBtn">
@@ -249,6 +249,21 @@
 
     </div>
   </main>
+
+  <!-- CTA Section (Visual Enrichment & Consistent Brand Identity - Requirement 20 & 21) -->
+  <section class="cta-banner-section py-5 text-white text-center" style="background-image: url('assets/images/backgrounds/bg-cta.jpg');">
+    <div class="container py-4 max-w-700 mx-auto">
+      <div class="eyebrow-badge badge-sage mb-3">
+        <i class="bi bi-shield-check"></i> Complete Vacation Peace of Mind
+      </div>
+      <h2 class="display-6 fw-bold mb-3 text-white">Prefer a Professional Eye While You're Away?</h2>
+      <p class="lead text-light opacity-90 mb-4">Our trusted inspectors perform comprehensive checks customized to your home's exact schedule and specifications.</p>
+      <div class="d-flex justify-content-center flex-wrap gap-3">
+        <a href="contact.html" class="btn btn-haven-sage btn-lg-custom">Book Your First Visit</a>
+        <a href="services.html" class="btn btn-haven-secondary btn-lg-custom">Explore Services</a>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="haven-footer">

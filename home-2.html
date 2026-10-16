@@ -114,61 +114,85 @@
   </nav>
 
   <!-- =========================================================================
-       2. Hero Section (Asymmetric Editorial Magazine Layout)
+       2. Hero Section (Distinct Immersive Editorial Magazine & Live HUD Showcase - Requirement 15)
        ========================================================================= -->
-  <header class="py-5 py-lg-6 bg-surface position-relative overflow-hidden">
-    <div class="container py-4">
-      <div class="row g-4 align-items-center">
-        <!-- Asymmetric Text Column -->
-        <div class="col-lg-5 order-2 order-lg-1 hero-anim-item">
-          <div class="eyebrow-badge badge-sage">
-            <i class="bi bi-geo-alt"></i> Local Property Presence
-          </div>
-          <h1 class="display-4 fw-bold text-primary mb-3">
-            Someone Local. <br><span class="font-serif fst-italic text-primary">Checking What Matters.</span>
-          </h1>
-          <p class="lead mb-4">
-            A discreet, structured, and proactive property check service tailored for vacation homes, mountain cabins,
-            and seasonal residential retreats.
-          </p>
+  <header class="hero-home-2-wrapper position-relative overflow-hidden">
+    <div class="container py-4 text-center">
+      <!-- Eyebrow Badge -->
+      <div class="eyebrow-badge badge-sage mb-3 mx-auto">
+        <i class="bi bi-shield-check"></i> Bespoke Estate Watch Protocol
+      </div>
+      
+      <!-- Headline & Editorial Lead -->
+      <h1 class="display-3 fw-bold text-white mb-3">
+        Discreet Stewardship For <br class="d-none d-md-block">
+        <span class="font-serif fst-italic text-sage">Luxury Residential Retreats.</span>
+      </h1>
+      <p class="lead text-white-50 max-w-750 mx-auto mb-4">
+        A structured, verified property check service tailored for vacation estates, lakeside cabins, and private seasonal homes. Protecting your investment with certified visual documentation.
+      </p>
 
-          <div class="card p-3 mb-4 bg-subtle border-0 rounded-3">
-            <div class="d-flex align-items-start gap-3">
-              <i class="bi bi-journal-check text-primary fs-3 mt-1"></i>
-              <div>
-                <h6 class="fw-bold text-primary mb-1">Standardized 24-Point Visual Protocol</h6>
-                <p class="small text-secondary mb-0">From perimeter entryways to interior plumbing shutoffs, we observe
-                  and document key indicators.</p>
-              </div>
+      <!-- Primary Action Row -->
+      <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
+        <a href="contact.html" class="btn btn-haven-sage btn-lg-custom shadow-lg">
+          <i class="bi bi-calendar2-check me-2"></i>Schedule Property Onboarding
+        </a>
+        <a href="services.html" class="btn btn-outline-light btn-lg-custom">
+          Explore All Watch Protocols
+        </a>
+      </div>
+
+      <!-- Distinct Interactive Live Watch Protocol HUD (3-Column Metric Cards) -->
+      <div class="row g-4 text-start justify-content-center mt-2">
+        <div class="col-md-4">
+          <div class="hero-hud-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="hero-hud-icon mb-0"><i class="bi bi-shield-lock"></i></div>
+              <span class="badge bg-success-subtle text-sage fw-bold px-2 py-1">Verified Latched</span>
             </div>
-          </div>
-
-          <div class="d-flex flex-wrap gap-3">
-            <a href="contact.html" class="btn btn-haven-primary btn-lg-custom">
-              Schedule an Intro Call
-            </a>
-            <a href="#philosophy" class="btn btn-haven-secondary btn-lg-custom">
-              Our Philosophy
-            </a>
-          </div>
-        </div>
-
-        <!-- Large Photography Panel -->
-        <div class="col-lg-7 order-1 order-lg-2 hero-anim-item">
-          <div class="hero-photo-container border border-secondary-subtle">
-            <img src="assets/images/hero/hero-home-2.jpg" alt="Contemporary mountain vacation home exterior"
-              class="hero-photo-img" loading="eager">
-            <div class="hero-overlay-panel">
-              <div class="d-flex align-items-center justify-content-between text-white flex-wrap gap-2">
-                <div>
-                  <span class="badge bg-sage text-white fw-bold mb-1"><i class="bi bi-shield-check me-1"></i> Live Status: Inspected</span>
-                  <p class="mb-0 small text-white"><i class="bi bi-clock-history me-1 text-warning"></i> Today at 09:14 AM &bull; North Ridge Cabin</p>
-                </div>
-                <a href="service-details.html" class="btn btn-sm hero-overlay-btn rounded-pill px-3 fw-semibold">View Log</a>
-              </div>
+            <h5>Exterior &amp; Perimeter</h5>
+            <p>Ground-level visual sweeps of entry deadbolts, window seals, exterior lighting, and perimeter gates.</p>
+            <div class="d-flex align-items-center text-white-50 small gap-2 pt-2 border-top border-white border-opacity-10">
+              <i class="bi bi-check2 text-sage"></i> <span>24-Point Ground Protocol</span>
             </div>
           </div>
         </div>
+
+        <div class="col-md-4">
+          <div class="hero-hud-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="hero-hud-icon mb-0"><i class="bi bi-thermometer-half"></i></div>
+              <span class="badge bg-success-subtle text-sage fw-bold px-2 py-1">68°F &bull; 42% RH</span>
+            </div>
+            <h5>Interior &amp; Climate</h5>
+            <p>Moisture inspection under sink cabinetry, water heater check, thermostat observation, and freeze prevention.</p>
+            <div class="d-flex align-items-center text-white-50 small gap-2 pt-2 border-top border-white border-opacity-10">
+              <i class="bi bi-check2 text-sage"></i> <span>Moisture &amp; HVAC Log</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="hero-hud-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="hero-hud-icon mb-0"><i class="bi bi-camera-fill"></i></div>
+              <span class="badge bg-success-subtle text-sage fw-bold px-2 py-1">Instant Delivery</span>
+            </div>
+            <h5>Digital Reports &amp; Mail</h5>
+            <p>GPS timestamped photo documentation, package clearing from porches, and immediate alerts delivered to your inbox.</p>
+            <div class="d-flex align-items-center text-white-50 small gap-2 pt-2 border-top border-white border-opacity-10">
+              <i class="bi bi-check2 text-sage"></i> <span>Same-Day PDF Visit Logs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Ribbon -->
+      <div class="hero-trust-ribbon">
+        <span><i class="bi bi-patch-check-fill text-sage me-2"></i>100% Certified Property Watch Specialists</span>
+        <span><i class="bi bi-geo-alt-fill text-sage me-2"></i>Locally Owned &amp; Operated</span>
+        <span><i class="bi bi-key-fill text-sage me-2"></i>Secure Key Safekeeping</span>
+        <span><i class="bi bi-x-circle text-sage me-2"></i>Zero Long-Term Contracts</span>
       </div>
     </div>
   </header>
@@ -252,7 +276,7 @@
   <section class="section-padding bg-surface">
     <div class="container">
       <div class="text-center max-w-700 mx-auto mb-5">
-        <div class="eyebrow-badge badge-brass">
+        <div class="eyebrow-badge badge-sage">
           <i class="bi bi-signpost-split"></i> Structured Flow
         </div>
         <h2 class="display-6 fw-bold text-primary">The Property Check Journey</h2>
@@ -290,6 +314,15 @@
           <p class="small text-secondary mb-0">Bringing in mail/packages, re-securing all deadbolts and gates, and
             uploading your digital photo report.</p>
         </div>
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-center gap-3 mt-5">
+        <a href="contact.html" class="btn btn-haven-sage btn-lg-custom shadow-sm">
+          <i class="bi bi-calendar-check me-2"></i>Book Your First Visit
+        </a>
+        <a href="how-it-works.html" class="btn btn-haven-secondary btn-lg-custom">
+          Explore Protocol Details
+        </a>
       </div>
     </div>
   </section>
@@ -492,7 +525,7 @@
   <section class="section-padding bg-surface">
     <div class="container">
       <div class="text-center max-w-700 mx-auto mb-5">
-        <div class="eyebrow-badge badge-brass">
+        <div class="eyebrow-badge badge-sage">
           <i class="bi bi-credit-card"></i> Service Plans
         </div>
         <h2 class="display-6 fw-bold text-primary">Transparent Cadence Options</h2>
@@ -505,7 +538,7 @@
             <h4 class="fw-bold text-primary">Essential</h4>
             <p class="text-secondary small">Occasional checks for seasonal owners.</p>
             <div class="pricing-amount">$110 <span class="period">/mo</span></div>
-            <span class="badge bg-secondary-subtle text-secondary mb-3">2 Checks Per Month</span>
+            <span class="badge bg-secondary-subtle text-secondary mb-3 small">2 Checks / Month</span>
             <ul class="card-checklist mb-4">
               <li><i class="bi bi-check2"></i> Exterior &amp; interior check</li>
               <li><i class="bi bi-check2"></i> Basic photo visit summary</li>
@@ -521,13 +554,13 @@
             <h4 class="fw-bold text-primary">Standard</h4>
             <p class="text-secondary small">Comprehensive seasonal care.</p>
             <div class="pricing-amount">$175 <span class="period">/mo</span></div>
-            <span class="badge bg-primary-subtle text-primary mb-3">2 Checks Per Month</span>
+            <span class="badge bg-success-subtle text-sage mb-3 small">2 Checks / Month</span>
             <ul class="card-checklist mb-4">
               <li><i class="bi bi-check2"></i> Full interior &amp; exterior check</li>
               <li><i class="bi bi-check2"></i> Mail &amp; package retrieval</li>
               <li><i class="bi bi-check2"></i> HVAC &amp; moisture review</li>
             </ul>
-            <a href="contact.html" class="btn btn-haven-brass mt-auto w-100">Select Standard</a>
+            <a href="contact.html" class="btn btn-haven-sage mt-auto w-100">Select Standard</a>
           </div>
         </div>
 
@@ -536,7 +569,7 @@
             <h4 class="fw-bold text-primary">Complete</h4>
             <p class="text-secondary small">All-inclusive care + storm readiness.</p>
             <div class="pricing-amount">$260 <span class="period">/mo</span></div>
-            <span class="badge bg-secondary-subtle text-secondary mb-3">2 Checks Per Month</span>
+            <span class="badge bg-secondary-subtle text-secondary mb-3 small">2 Checks / Month</span>
             <ul class="card-checklist mb-4">
               <li><i class="bi bi-check2"></i> Everything in Standard Watch</li>
               <li><i class="bi bi-check2"></i> Pre &amp; post storm checks</li>
@@ -617,21 +650,24 @@
   </section>
 
   <!-- =========================================================================
-       10. Final Editorial CTA
+       10. Final Editorial CTA (Enhanced with Background Image)
        ========================================================================= -->
-  <section class="py-5 bg-navy text-white text-center">
-    <div class="container py-4 max-w-700 mx-auto">
+  <section class="section-padding position-relative text-white overflow-hidden cta-banner-section text-center" style="background-image: url('assets/images/backgrounds/bg-cta.jpg');">
+    <div class="container py-4 max-w-700 mx-auto position-relative z-2">
+      <div class="eyebrow-badge badge-sage mb-3">
+        <i class="bi bi-shield-check"></i> Uncompromising Estate Care
+      </div>
       <h2 class="display-5 fw-bold mb-3 text-white">
         Confidence for the Home You Cherish.
       </h2>
-      <p class="lead text-light opacity-75 mb-4">
+      <p class="lead text-white-50 mb-4">
         Join hundreds of seasonal and vacation homeowners who trust Homehaven Watch while they are away.
       </p>
       <div class="d-flex flex-wrap justify-content-center gap-3">
-        <a href="contact.html" class="btn btn-haven-brass btn-lg-custom">
-          <i class="bi bi-clipboard-check"></i> Request a Property Check
+        <a href="contact.html" class="btn btn-haven-sage btn-lg-custom shadow-lg">
+          <i class="bi bi-clipboard-check me-2"></i> Request a Property Check
         </a>
-        <a href="pricing.html" class="btn btn-haven-secondary btn-lg-custom text-white border-light">
+        <a href="pricing.html" class="btn btn-outline-light btn-lg-custom">
           Explore Pricing
         </a>
       </div>

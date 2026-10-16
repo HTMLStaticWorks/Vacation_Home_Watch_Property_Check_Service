@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
 <head>
   <meta charset="UTF-8">
@@ -93,14 +93,14 @@
     </div>
   </nav>
 
-  <!-- Page Header -->
-  <header class="py-5 bg-surface border-bottom border-secondary-subtle">
-    <div class="container py-4 text-center max-w-800 mx-auto">
-      <div class="eyebrow-badge badge-brass">
+  <!-- Hero Header (Consistent Height & Visual Impact - Requirement 18) -->
+  <header class="page-hero hero-bg-blog text-center">
+    <div class="container text-center max-w-800 mx-auto">
+      <div class="eyebrow-badge badge-sage mb-3">
         <i class="bi bi-journal-text"></i> Educational Articles
       </div>
-      <h1 class="display-4 fw-bold text-primary mb-3">Homeowner Insights &amp; Journal</h1>
-      <p class="lead text-secondary mb-4">
+      <h1 class="display-4 fw-bold text-white mb-3">Homeowner Insights &amp; Journal</h1>
+      <p class="lead text-white-50 mb-4">
         Practical advice on second-home stewardship, seasonal weather preparation, smart climate control, and vacant property management.
       </p>
 
@@ -128,7 +128,7 @@
       <div class="bg-surface rounded-4 overflow-hidden border border-secondary-subtle shadow-md mb-5">
         <div class="row g-0 align-items-center">
           <div class="col-lg-7">
-            <img src="assets/images/blog/blog-1.svg" alt="Featured blog cover" class="w-100 h-auto" style="min-height: 320px; object-fit: cover;">
+            <img src="assets/images/blog/blog-1.jpg" alt="Featured blog cover" class="w-100 h-auto" style="min-height: 320px; object-fit: cover;">
           </div>
           <div class="col-lg-5 p-4 p-md-5">
             <span class="blog-meta-tag">Featured Guide • Vacation Homes</span>
@@ -140,7 +140,7 @@
             </p>
             <div class="d-flex align-items-center justify-content-between pt-3 border-top border-secondary-subtle">
               <span class="small text-muted"><i class="bi bi-clock me-1"></i> 5 Min Read</span>
-              <a href="blog-details.html" class="btn btn-haven-brass btn-sm-custom">Read Article</a>
+              <a href="blog-details.html" class="btn btn-haven-sage btn-sm-custom">Read Article</a>
             </div>
           </div>
         </div>
@@ -153,7 +153,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="blog-card blog-article-item" data-category="seasonal">
             <div class="blog-thumb-wrap">
-              <img src="assets/images/blog/blog-2.svg" alt="Seasonal departure guide">
+              <img src="assets/images/blog/blog-2.jpg" alt="Seasonal departure guide" class="w-100 h-100 object-fit-cover">
             </div>
             <div class="blog-card-body">
               <span class="blog-meta-tag">Seasonal Preparation</span>
@@ -171,7 +171,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="blog-card blog-article-item" data-category="storm">
             <div class="blog-thumb-wrap">
-              <img src="assets/images/blog/blog-3.svg" alt="Storm readiness advice">
+              <img src="assets/images/blog/blog-3.jpg" alt="Storm readiness advice" class="w-100 h-100 object-fit-cover">
             </div>
             <div class="blog-card-body">
               <span class="blog-meta-tag">Storm Readiness</span>
@@ -189,7 +189,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="blog-card blog-article-item" data-category="maintenance">
             <div class="blog-thumb-wrap">
-              <img src="assets/images/blog/blog-4.svg" alt="Vendor access management">
+              <img src="assets/images/blog/blog-4.jpg" alt="Vendor access management" class="w-100 h-100 object-fit-cover">
             </div>
             <div class="blog-card-body">
               <span class="blog-meta-tag">Maintenance Awareness</span>
@@ -207,7 +207,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="blog-card blog-article-item" data-category="vacation">
             <div class="blog-thumb-wrap">
-              <img src="assets/images/properties/lake-house.svg" alt="Lakefront vacation property">
+              <img src="assets/images/properties/lake-house.jpg" alt="Lakefront vacation property" class="w-100 h-100 object-fit-cover">
             </div>
             <div class="blog-card-body">
               <span class="blog-meta-tag">Vacation Homes</span>
@@ -225,7 +225,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="blog-card blog-article-item" data-category="maintenance">
             <div class="blog-thumb-wrap">
-              <img src="assets/images/inspections/hvac-meter.svg" alt="Thermostat smart settings">
+              <img src="assets/images/services/service-interior.jpg" alt="Thermostat smart settings" class="w-100 h-100 object-fit-cover">
             </div>
             <div class="blog-card-body">
               <span class="blog-meta-tag">Maintenance Awareness</span>
@@ -243,7 +243,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="blog-card blog-article-item" data-category="seasonal">
             <div class="blog-thumb-wrap">
-              <img src="assets/images/properties/mountain-cabin.svg" alt="Mountain cabin property">
+              <img src="assets/images/properties/mountain-cabin.jpg" alt="Mountain cabin property" class="w-100 h-100 object-fit-cover">
             </div>
             <div class="blog-card-body">
               <span class="blog-meta-tag">Seasonal Preparation</span>
@@ -271,6 +271,21 @@
 
     </div>
   </main>
+
+  <!-- CTA Section (Requirement 20 & 21) -->
+  <section class="cta-banner-section py-5 text-white text-center" style="background-image: url('assets/images/backgrounds/bg-cta.jpg');">
+    <div class="container py-4 max-w-700 mx-auto">
+      <div class="eyebrow-badge badge-sage mb-3">
+        <i class="bi bi-shield-check"></i> Expert Home Stewardship
+      </div>
+      <h2 class="display-6 fw-bold mb-3 text-white">Put These Best Practices Into Action</h2>
+      <p class="lead text-light opacity-90 mb-4">Let our professional watch specialists protect your investment every week.</p>
+      <div class="d-flex justify-content-center flex-wrap gap-3">
+        <a href="contact.html" class="btn btn-haven-sage btn-lg-custom">Book Your First Visit</a>
+        <a href="property-watch-checklist.html" class="btn btn-haven-secondary btn-lg-custom">Interactive Checklist</a>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="haven-footer">

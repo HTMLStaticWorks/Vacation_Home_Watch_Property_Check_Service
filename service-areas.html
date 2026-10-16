@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
 <head>
   <meta charset="UTF-8">
@@ -93,20 +93,20 @@
     </div>
   </nav>
 
-  <!-- Hero Header -->
-  <header class="py-5 bg-surface border-bottom border-secondary-subtle">
-    <div class="container py-4 text-center max-w-800 mx-auto">
-      <div class="eyebrow-badge badge-sage">
+  <!-- Hero Header (Consistent Height & Visual Impact - Requirement 18) -->
+  <header class="page-hero hero-bg-areas text-center">
+    <div class="container text-center max-w-800 mx-auto">
+      <div class="eyebrow-badge badge-sage mb-3">
         <i class="bi bi-geo-alt-fill"></i> Local Community Coverage
       </div>
-      <h1 class="display-4 fw-bold text-primary mb-3">Service Regions &amp; Communities</h1>
-      <p class="lead text-secondary mb-0">
+      <h1 class="display-4 fw-bold text-white mb-3">Service Regions &amp; Communities</h1>
+      <p class="lead text-white-50 mb-0">
         We provide dedicated, local property watch coverage across premier vacation destinations, coastal harbors, alpine lakes, and mountain enclaves.
       </p>
     </div>
   </header>
 
-  <!-- Regional Coverage Cards -->
+  <!-- Regional Coverage Cards (Enhanced with Photography - Requirement 21) -->
   <main class="section-padding bg-subtle">
     <div class="container">
       <div class="row g-4">
@@ -114,9 +114,12 @@
         <!-- Region 1: Coastal Communities -->
         <div class="col-lg-6">
           <div class="haven-card">
-            <div class="d-flex align-items-center justify-content-between mb-3">
+            <div class="service-card-media">
+              <img src="assets/images/properties/coastal-villa.jpg" alt="Coastal Communities" class="w-100 h-100 object-fit-cover">
+              <span class="service-media-badge"><i class="bi bi-water me-1"></i> Ocean &amp; Sound</span>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mb-2">
               <span class="badge bg-primary-subtle text-primary fw-bold px-3 py-2 rounded-pill">Coastal Enclave</span>
-              <span class="small text-muted"><i class="bi bi-water text-primary me-1"></i> Ocean &amp; Sound</span>
             </div>
             <h3 class="fw-bold text-primary">Coastal Communities</h3>
             <p class="text-secondary small">Serving Haven Bay, Dune Ridge, Seagrass Bluff, and surrounding shoreline vacation homes.</p>
@@ -128,7 +131,7 @@
 
             <div class="d-flex gap-2 mt-auto">
               <a href="area-details.html" class="btn btn-haven-primary btn-sm-custom flex-grow-1">View Coastal Coverage Area</a>
-              <a href="contact.html" class="btn btn-haven-brass btn-sm-custom">Inquire</a>
+              <a href="contact.html" class="btn btn-haven-sage btn-sm-custom">Inquire</a>
             </div>
           </div>
         </div>
@@ -136,9 +139,12 @@
         <!-- Region 2: Lakefront Communities -->
         <div class="col-lg-6">
           <div class="haven-card">
-            <div class="d-flex align-items-center justify-content-between mb-3">
-              <span class="badge bg-info-subtle text-info fw-bold px-3 py-2 rounded-pill">Lakefront Retreats</span>
-              <span class="small text-muted"><i class="bi bi-tsunami text-info me-1"></i> Inland Water</span>
+            <div class="service-card-media">
+              <img src="assets/images/properties/lake-house.jpg" alt="Lake & Harbor Communities" class="w-100 h-100 object-fit-cover">
+              <span class="service-media-badge"><i class="bi bi-water me-1"></i> Inland Water</span>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <span class="badge bg-primary-subtle text-primary fw-bold px-3 py-2 rounded-pill">Lakefront Retreats</span>
             </div>
             <h3 class="fw-bold text-primary">Lake &amp; Harbor Communities</h3>
             <p class="text-secondary small">Serving Clearwater Lake, Pinecrest Harbor, Heron Point, and private dockside residences.</p>
@@ -150,7 +156,7 @@
 
             <div class="d-flex gap-2 mt-auto">
               <a href="area-details.html" class="btn btn-haven-primary btn-sm-custom flex-grow-1">View Lakefront Coverage Area</a>
-              <a href="contact.html" class="btn btn-haven-brass btn-sm-custom">Inquire</a>
+              <a href="contact.html" class="btn btn-haven-sage btn-sm-custom">Inquire</a>
             </div>
           </div>
         </div>
@@ -158,9 +164,12 @@
         <!-- Region 3: Mountain Enclaves -->
         <div class="col-lg-6">
           <div class="haven-card">
-            <div class="d-flex align-items-center justify-content-between mb-3">
+            <div class="service-card-media">
+              <img src="assets/images/properties/mountain-cabin.jpg" alt="Mountain & Alpine Enclaves" class="w-100 h-100 object-fit-cover">
+              <span class="service-media-badge"><i class="bi bi-snow me-1"></i> High Altitude</span>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mb-2">
               <span class="badge bg-success-subtle text-success fw-bold px-3 py-2 rounded-pill">Mountain &amp; Ski</span>
-              <span class="small text-muted"><i class="bi bi-snow text-success me-1"></i> High Altitude</span>
             </div>
             <h3 class="fw-bold text-primary">Mountain &amp; Alpine Enclaves</h3>
             <p class="text-secondary small">Serving Summit Ridge, Aspen Glen, Timberline Valley, and high-altitude seasonal cabins.</p>
@@ -172,7 +181,7 @@
 
             <div class="d-flex gap-2 mt-auto">
               <a href="area-details.html" class="btn btn-haven-primary btn-sm-custom flex-grow-1">View Mountain Coverage Area</a>
-              <a href="contact.html" class="btn btn-haven-brass btn-sm-custom">Inquire</a>
+              <a href="contact.html" class="btn btn-haven-sage btn-sm-custom">Inquire</a>
             </div>
           </div>
         </div>
@@ -180,10 +189,12 @@
         <!-- Region 4: Seasonal Golf & Residential Havens -->
         <div class="col-lg-6">
           <div class="haven-card">
-            <div class="haven-card-icon mb-0 d-none"></div>
-            <div class="d-flex align-items-center justify-content-between mb-3">
-              <span class="badge bg-warning-subtle text-warning fw-bold px-3 py-2 rounded-pill">Seasonal Communities</span>
-              <span class="small text-muted"><i class="bi bi-sun text-warning me-1"></i> Resort &amp; Golf</span>
+            <div class="service-card-media">
+              <img src="assets/images/properties/suburban-estate.jpg" alt="Seasonal Golf & Resort Communities" class="w-100 h-100 object-fit-cover">
+              <span class="service-media-badge"><i class="bi bi-sun me-1"></i> Resort &amp; Golf</span>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <span class="badge bg-primary-subtle text-primary fw-bold px-3 py-2 rounded-pill">Seasonal Communities</span>
             </div>
             <h3 class="fw-bold text-primary">Seasonal Golf &amp; Resort Communities</h3>
             <p class="text-secondary small">Serving Whisper Palm Estates, Sun Valley Enclaves, and gated golf club residences.</p>
@@ -195,7 +206,7 @@
 
             <div class="d-flex gap-2 mt-auto">
               <a href="area-details.html" class="btn btn-haven-primary btn-sm-custom flex-grow-1">View Resort Coverage Area</a>
-              <a href="contact.html" class="btn btn-haven-brass btn-sm-custom">Inquire</a>
+              <a href="contact.html" class="btn btn-haven-sage btn-sm-custom">Inquire</a>
             </div>
           </div>
         </div>
@@ -208,7 +219,7 @@
         <p class="text-secondary small mb-3">
           We frequently accommodate custom property check routes for neighboring enclaves and private residences within our regional driving radius.
         </p>
-        <a href="contact.html" class="btn btn-haven-brass btn-sm-custom"><i class="bi bi-geo-alt"></i> Check Property Address Availability</a>
+        <a href="contact.html" class="btn btn-haven-sage btn-sm-custom"><i class="bi bi-geo-alt"></i> Check Property Address Availability</a>
       </div>
 
       <!-- Disclaimer -->
@@ -220,6 +231,21 @@
 
     </div>
   </main>
+
+  <!-- CTA Section (Requirement 20 & 21) -->
+  <section class="cta-banner-section py-5 text-white text-center" style="background-image: url('assets/images/backgrounds/bg-cta.jpg');">
+    <div class="container py-4 max-w-700 mx-auto">
+      <div class="eyebrow-badge badge-sage mb-3">
+        <i class="bi bi-shield-check"></i> Regional Presence
+      </div>
+      <h2 class="display-6 fw-bold mb-3 text-white">Trust Your Vacation Home to Local Experts</h2>
+      <p class="lead text-light opacity-90 mb-4">Select your region and schedule your initial walkthrough consultation today.</p>
+      <div class="d-flex justify-content-center flex-wrap gap-3">
+        <a href="contact.html" class="btn btn-haven-sage btn-lg-custom">Book Your First Visit</a>
+        <a href="pricing.html" class="btn btn-haven-secondary btn-lg-custom">View All Plans</a>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="haven-footer">

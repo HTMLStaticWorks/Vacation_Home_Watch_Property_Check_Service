@@ -29,15 +29,17 @@
   --brand-navy: #122232;
   --brand-navy-light: #1D344B;
   --brand-navy-dark: #0A141E;
+  --brand-navy-subtle: #F0F4F8;
   
-  --brand-sage: #2C5E47;
-  --brand-sage-light: #3D7A5E;
-  --brand-sage-subtle: #EBF4EF;
+  --brand-sage: #1F6B4A;
+  --brand-sage-light: #2A865D;
+  --brand-sage-subtle: #EBF5F0;
+  --brand-sage-glow: rgba(31, 107, 74, 0.22);
   
-  --brand-brass: #C29627;
-  --brand-brass-light: #DFB242;
-  --brand-brass-subtle: #FAF3E1;
-  --brand-brass-glow: rgba(194, 150, 39, 0.25);
+  --brand-brass: var(--brand-sage);
+  --brand-brass-light: var(--brand-sage-light);
+  --brand-brass-subtle: var(--brand-sage-subtle);
+  --brand-brass-glow: var(--brand-sage-glow);
   
   --status-normal: #1E7E4E;
   --status-normal-bg: #E8F7EE;
@@ -98,29 +100,31 @@ html[data-theme="dark"] {
   --text-muted: #6C8198;
   --text-inverse: #0B131C;
   
-  --brand-navy: #1D344B;
-  --brand-navy-light: #2A4B6B;
+  --brand-navy: #1B2E42;
+  --brand-navy-light: #2A4868;
   --brand-navy-dark: #080E15;
+  --brand-navy-subtle: #132233;
   
-  --brand-sage: #387859;
-  --brand-sage-light: #4A9C74;
-  --brand-sage-subtle: #14291F;
+  --brand-sage: #34D399; /* Vibrant emerald green for maximum readability and high contrast */
+  --brand-sage-light: #4ADE80; /* Bright mint green for accents and small icons */
+  --brand-sage-subtle: rgba(52, 211, 153, 0.16);
+  --brand-sage-glow: rgba(52, 211, 153, 0.28);
   
-  --brand-brass: #D9A934;
-  --brand-brass-light: #E7C25E;
-  --brand-brass-subtle: #2D2512;
-  --brand-brass-glow: rgba(217, 169, 52, 0.25);
+  --brand-brass: var(--brand-sage);
+  --brand-brass-light: var(--brand-sage-light);
+  --brand-brass-subtle: var(--brand-sage-subtle);
+  --brand-brass-glow: var(--brand-sage-glow);
   
-  --status-normal: #34A86A;
-  --status-normal-bg: #112B1D;
-  --status-attention: #E0941F;
+  --status-normal: #34D399;
+  --status-normal-bg: rgba(52, 211, 153, 0.16);
+  --status-attention: #FBBF24;
   --status-attention-bg: #2B2110;
-  --status-alert: #E85D4E;
+  --status-alert: #F87171;
   --status-alert-bg: #301715;
   
-  --border-color: rgba(244, 247, 251, 0.1);
-  --border-color-subtle: rgba(244, 247, 251, 0.05);
-  --border-color-hover: rgba(244, 247, 251, 0.22);
+  --border-color: rgba(244, 247, 251, 0.12);
+  --border-color-subtle: rgba(244, 247, 251, 0.06);
+  --border-color-hover: rgba(52, 211, 153, 0.35);
   
   --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.2);
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -129,8 +133,8 @@ html[data-theme="dark"] {
   --shadow-xl: 0 24px 60px rgba(0, 0, 0, 0.6);
   --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
   
-  --glass-bg: rgba(17, 29, 43, 0.85);
-  --glass-border: rgba(244, 247, 251, 0.12);
+  --glass-bg: rgba(17, 29, 43, 0.92);
+  --glass-border: rgba(244, 247, 251, 0.14);
 }
 
 /* --------------------------------------------------------------------------
@@ -210,7 +214,7 @@ img {
 
 /* Accessible focus ring */
 :focus-visible {
-  outline: 2px solid var(--brand-brass);
+  outline: 2px solid var(--brand-sage);
   outline-offset: 3px;
 }
 
@@ -255,23 +259,24 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.35rem 0.9rem;
-  background-color: var(--brand-brass-subtle);
-  color: var(--brand-brass);
+  padding: 0.32rem 0.85rem;
+  background-color: var(--brand-sage-subtle);
+  color: var(--brand-sage);
   font-family: var(--font-heading);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   border-radius: var(--radius-full);
-  border: 1px solid rgba(194, 150, 39, 0.25);
+  border: 1px solid rgba(31, 107, 74, 0.22);
   margin-bottom: 1rem;
 }
 
-.eyebrow-badge.badge-sage {
+.eyebrow-badge.badge-sage,
+.eyebrow-badge.badge-brass {
   background-color: var(--brand-sage-subtle);
   color: var(--brand-sage);
-  border-color: rgba(44, 94, 71, 0.25);
+  border-color: rgba(31, 107, 74, 0.22);
 }
 
 .eyebrow-badge.badge-navy {
@@ -371,44 +376,7 @@ img {
   transform: translateY(-2px);
 }
 
-.btn-haven-brass {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  background-color: var(--brand-brass);
-  color: #14202E !important;
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 0.95rem;
-  padding: 0.75rem 1.6rem;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--brand-brass);
-  box-shadow: 0 4px 14px var(--brand-brass-glow);
-  transition: all var(--transition-base);
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-haven-brass:hover {
-  background-color: var(--brand-brass-light);
-  border-color: var(--brand-brass-light);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px var(--brand-brass-glow);
-  color: #0A141E !important;
-}
-
-.btn-haven-brass:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 8px var(--brand-brass-glow);
-}
-
-.btn-haven-brass:hover i {
-  transform: translateX(2px);
-  transition: transform var(--transition-fast);
-}
-
+.btn-haven-brass,
 .btn-haven-sage {
   display: inline-flex;
   align-items: center;
@@ -422,22 +390,32 @@ img {
   padding: 0.75rem 1.6rem;
   border-radius: var(--radius-sm);
   border: 1px solid var(--brand-sage);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 4px 14px var(--brand-sage-glow);
   transition: all var(--transition-base);
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
+.btn-haven-brass:hover,
 .btn-haven-sage:hover {
   background-color: var(--brand-sage-light);
   border-color: var(--brand-sage-light);
   transform: translateY(-2px);
-  box-shadow: 0 8px 22px rgba(44, 94, 71, 0.3);
+  box-shadow: 0 8px 24px var(--brand-sage-glow);
   color: #FFFFFF !important;
 }
 
+.btn-haven-brass:active,
 .btn-haven-sage:active {
   transform: translateY(0);
-  box-shadow: var(--shadow-xs);
+  box-shadow: 0 2px 8px var(--brand-sage-glow);
+}
+
+.btn-haven-brass:hover i,
+.btn-haven-sage:hover i {
+  transform: translateX(2px);
+  transition: transform var(--transition-fast);
 }
 
 .btn-sm-custom,
@@ -513,15 +491,15 @@ img {
 
 [data-bs-theme="dark"] .haven-link-btn:hover,
 [data-bs-theme="dark"] .btn-haven-link:hover {
-  background-color: var(--brand-brass);
+  background-color: var(--brand-sage);
   color: #0B131C !important;
-  border-color: var(--brand-brass);
-  box-shadow: 0 8px 24px var(--brand-brass-glow);
+  border-color: var(--brand-sage);
+  box-shadow: 0 8px 24px var(--brand-sage-glow);
 }
 
 [data-bs-theme="dark"] .haven-link-btn i,
 [data-bs-theme="dark"] .btn-haven-link i {
-  color: var(--brand-brass);
+  color: var(--brand-sage);
 }
 
 [data-bs-theme="dark"] .haven-link-btn:hover i,
@@ -709,7 +687,7 @@ img {
   font-family: var(--font-body);
   font-size: 0.72rem;
   font-weight: 500;
-  color: var(--brand-brass);
+  color: var(--brand-sage);
   letter-spacing: 0.02em;
 }
 
@@ -780,22 +758,39 @@ img {
 
 .haven-dropdown-item:hover i {
   transform: translateX(3px);
-  color: var(--brand-brass);
+  color: var(--brand-sage);
 }
 
 /* --------------------------------------------------------------------------
-   Mobile & Tablet Navbar (Including 1024px Viewport)
+   Mobile & Tablet Navbar (Including 1024px, 768px, 360px Viewports)
+   Overlay positioning prevents hero section from moving downwards on toggle
    -------------------------------------------------------------------------- */
 @media (max-width: 1199.98px) {
+  .haven-navbar {
+    position: sticky;
+    top: 0;
+  }
+
+  .haven-navbar > .container,
+  .haven-navbar > .container-fluid {
+    position: relative;
+  }
+
   .haven-navbar .navbar-collapse {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 1rem;
+    right: 1rem;
+    width: auto;
     background-color: var(--bg-surface);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
     padding: 1.25rem 1.5rem;
-    margin-top: 1rem;
+    margin-top: 0;
     box-shadow: var(--shadow-xl);
-    clear: both;
-    width: 100%;
+    z-index: 1050;
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
   }
 
   .haven-navbar .navbar-nav {
@@ -821,7 +816,7 @@ img {
   }
 
   .haven-navbar .navbar-toggler:focus {
-    box-shadow: 0 0 0 3px var(--brand-brass-glow);
+    box-shadow: 0 0 0 3px var(--brand-sage-glow);
   }
 
   .haven-navbar .haven-dropdown-menu {
@@ -874,6 +869,17 @@ img {
   position: relative;
   overflow: hidden;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.haven-card > .btn:last-child,
+.haven-card > a.btn:last-child,
+.haven-card .btn-haven-secondary:last-child,
+.haven-card .btn-sm-custom:last-child,
+.haven-card .btn.mt-auto,
+.haven-card .btn-haven-primary:last-child {
+  margin-top: auto !important;
 }
 
 .haven-card:hover {
@@ -1214,10 +1220,10 @@ img {
 }
 
 .process-step-item:hover .process-step-number {
-  background-color: var(--brand-brass);
+  background-color: var(--brand-sage);
   color: #FFFFFF;
   transform: scale(1.1);
-  box-shadow: 0 0 0 8px var(--bg-primary), 0 8px 24px var(--brand-brass-glow);
+  box-shadow: 0 0 0 8px var(--bg-primary), 0 8px 24px var(--brand-sage-glow);
 }
 
 /* Horizontal Journey for Home 2 */
@@ -1249,7 +1255,7 @@ img {
 }
 
 .journey-node:hover {
-  border-color: var(--brand-brass);
+  border-color: var(--brand-sage);
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
 }
@@ -1296,8 +1302,9 @@ img {
 }
 
 [data-bs-theme="dark"] .pricing-switch-btn.active {
-  background-color: var(--brand-brass);
-  color: #14202E;
+  background-color: var(--brand-sage);
+  color: #0A141E;
+  font-weight: 700;
 }
 
 .pricing-card {
@@ -1319,25 +1326,38 @@ img {
 }
 
 .pricing-card.featured {
-  border: 2px solid var(--brand-brass);
-  box-shadow: var(--shadow-lg), 0 0 30px var(--brand-brass-glow);
+  border: 2px solid var(--brand-sage);
+  box-shadow: var(--shadow-lg), 0 0 30px var(--brand-sage-glow);
 }
 
 .pricing-badge-popular {
   position: absolute;
-  top: -14px;
+  top: -12px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--brand-brass);
-  color: #14202E;
+  background-color: var(--brand-sage);
+  color: #FFFFFF;
   font-family: var(--font-heading);
-  font-size: 0.75rem;
-  font-weight: 800;
+  font-size: 0.68rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  padding: 0.3rem 1rem;
+  letter-spacing: 0.06em;
+  padding: 0.22rem 0.75rem;
   border-radius: var(--radius-full);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+[data-bs-theme="dark"] .pricing-badge-popular {
+  background-color: #34D399;
+  color: #0A141E;
+}
+
+.pricing-card .badge {
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  padding: 0.3rem 0.65rem !important;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.02em;
 }
 
 .pricing-amount {
@@ -2516,6 +2536,316 @@ img {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* ==========================================================================
+   23. Unified Page Hero Component (Requirement 18 & 21)
+   Consistent hero section height across all inner pages with high-res backgrounds
+   ========================================================================== */
+.page-hero {
+  position: relative;
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 4.5rem 0;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.page-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(14, 26, 38, 0.88) 0%, rgba(18, 34, 50, 0.74) 100%);
+  z-index: 1;
+}
+
+[data-bs-theme="dark"] .page-hero::before,
+html[data-theme="dark"] .page-hero::before {
+  background: linear-gradient(135deg, rgba(8, 14, 22, 0.94) 0%, rgba(11, 20, 31, 0.85) 100%);
+}
+
+.page-hero > .container {
+  position: relative;
+  z-index: 2;
+}
+
+.page-hero .display-5,
+.page-hero h1 {
+  color: #FFFFFF !important;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.page-hero .lead,
+.page-hero p {
+  color: rgba(255, 255, 255, 0.9) !important;
+  max-width: 680px;
+}
+
+.page-hero .breadcrumb-item,
+.page-hero .breadcrumb-item a {
+  color: rgba(255, 255, 255, 0.75) !important;
+  font-size: 0.88rem;
+  text-decoration: none;
+}
+
+.page-hero .breadcrumb-item.active,
+.page-hero .breadcrumb-item a:hover {
+  color: #34D399 !important;
+}
+
+.page-hero .breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+/* Page Hero Background Variations */
+.hero-bg-services { background-image: url('../images/heroes/hero-services.jpg'); }
+.hero-bg-about { background-image: url('../images/heroes/hero-about.jpg'); }
+.hero-bg-how-it-works { background-image: url('../images/heroes/hero-how-it-works.jpg'); }
+.hero-bg-pricing { background-image: url('../images/heroes/hero-pricing.jpg'); }
+.hero-bg-contact { background-image: url('../images/heroes/hero-contact.jpg'); }
+.hero-bg-faqs { background-image: url('../images/heroes/hero-main.jpg'); }
+.hero-bg-areas { background-image: url('../images/heroes/hero-alpine.jpg'); }
+.hero-bg-checklist { background-image: url('../images/heroes/hero-checklist.jpg'); }
+.hero-bg-blog { background-image: url('../images/heroes/hero-about.jpg'); }
+.hero-bg-vacant { background-image: url('../images/services/service-vacant-home.jpg'); }
+.hero-bg-mail { background-image: url('../images/services/service-mail-delivery.jpg'); }
+.hero-bg-storm { background-image: url('../images/services/service-storm-prep.jpg'); }
+.hero-bg-post-storm { background-image: url('../images/services/service-post-storm.jpg'); }
+.hero-bg-exterior { background-image: url('../images/services/service-exterior.jpg'); }
+.hero-bg-interior { background-image: url('../images/services/service-interior.jpg'); }
+
+/* ==========================================================================
+   24. Home Page 2 - Distinct Immersive Editorial Hero (Requirement 15)
+   ========================================================================== */
+.hero-home-2-wrapper {
+  position: relative;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  background-image: url('../images/heroes/hero-alpine.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 5.5rem 0 4rem 0;
+  overflow: hidden;
+}
+
+.hero-home-2-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(14, 26, 38, 0.90) 0%, rgba(18, 34, 50, 0.82) 45%, rgba(14, 26, 38, 0.95) 100%);
+  z-index: 1;
+}
+
+[data-bs-theme="dark"] .hero-home-2-wrapper::before,
+html[data-theme="dark"] .hero-home-2-wrapper::before {
+  background: linear-gradient(180deg, rgba(8, 14, 22, 0.95) 0%, rgba(11, 20, 31, 0.88) 45%, rgba(8, 14, 22, 0.98) 100%);
+}
+
+.hero-home-2-wrapper > .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-hud-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  color: #FFFFFF;
+  transition: all var(--transition-smooth);
+  height: 100%;
+}
+
+.hero-hud-card:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(52, 211, 153, 0.6);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+}
+
+.hero-hud-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius-sm);
+  background: rgba(52, 211, 153, 0.2);
+  color: #34D399;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 0.85rem;
+}
+
+.hero-hud-card h5 {
+  color: #FFFFFF !important;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.hero-hud-card p {
+  color: rgba(255, 255, 255, 0.78) !important;
+  font-size: 0.84rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.hero-trust-ribbon {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.25rem 2rem;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  margin-top: 3rem;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   25. Service Card Media Enhancement (Requirement 19)
+   ========================================================================== */
+.service-card-media {
+  position: relative;
+  width: 100%;
+  height: 210px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+  background-color: var(--bg-subtle-2);
+}
+
+.service-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.haven-card:hover .service-card-media img {
+  transform: scale(1.06);
+}
+
+.service-media-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+  background-color: rgba(18, 34, 50, 0.82);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #34D399;
+  border: 1px solid rgba(52, 211, 153, 0.35);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* ==========================================================================
+   26. Dark Mode High-Contrast Green Text & Icons (Requirement 14)
+   ========================================================================== */
+[data-bs-theme="dark"] .text-success,
+[data-bs-theme="dark"] .text-sage,
+[data-bs-theme="dark"] .card-checklist li i,
+[data-bs-theme="dark"] .floating-hero-list li i,
+[data-bs-theme="dark"] .floating-hero-footer .text-success,
+[data-bs-theme="dark"] .bi-check-circle-fill,
+[data-bs-theme="dark"] .bi-check2,
+[data-bs-theme="dark"] .bi-shield-check,
+[data-bs-theme="dark"] .bi-check-lg,
+[data-bs-theme="dark"] .card-checklist i,
+[data-bs-theme="dark"] .process-step-number,
+[data-bs-theme="dark"] .journey-tag {
+  color: #34D399 !important;
+}
+
+[data-bs-theme="dark"] .haven-card-icon {
+  background-color: rgba(52, 211, 153, 0.16) !important;
+  color: #34D399 !important;
+  border: 1px solid rgba(52, 211, 153, 0.28);
+}
+
+[data-bs-theme="dark"] .haven-card:hover .haven-card-icon {
+  background-color: #34D399 !important;
+  color: #0A141E !important;
+}
+
+[data-bs-theme="dark"] .badge-sage,
+[data-bs-theme="dark"] .eyebrow-badge.badge-sage,
+[data-bs-theme="dark"] .eyebrow-badge.badge-brass,
+[data-bs-theme="dark"] .badge.bg-success-subtle,
+[data-bs-theme="dark"] .badge-primary-subtle {
+  background-color: rgba(52, 211, 153, 0.16) !important;
+  color: #4ADE80 !important;
+  border: 1px solid rgba(52, 211, 153, 0.32) !important;
+}
+
+[data-bs-theme="dark"] .btn-haven-brass,
+[data-bs-theme="dark"] .btn-haven-sage {
+  background-color: #1F6B4A !important;
+  color: #FFFFFF !important;
+  border-color: #34D399 !important;
+}
+
+[data-bs-theme="dark"] .btn-haven-brass:hover,
+[data-bs-theme="dark"] .btn-haven-sage:hover {
+  background-color: #2A865D !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 20px rgba(52, 211, 153, 0.35) !important;
+}
+
+/* ==========================================================================
+   27. Visual Enrichment & Plain Background Reduction (Requirement 21)
+   ========================================================================== */
+.cta-banner-section {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+
+.cta-banner-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(14, 26, 38, 0.94) 0%, rgba(29, 52, 75, 0.90) 100%);
+  z-index: 1;
+}
+
+[data-bs-theme="dark"] .cta-banner-section::before {
+  background: linear-gradient(135deg, rgba(8, 14, 22, 0.96) 0%, rgba(14, 26, 38, 0.92) 100%);
+}
+
+.cta-banner-section > .container {
+  position: relative;
+  z-index: 2;
 }
 
 
