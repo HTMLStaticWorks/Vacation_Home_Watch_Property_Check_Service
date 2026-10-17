@@ -570,7 +570,7 @@
                     <td>Sep 23, 2026</td>
                     <td>Home Office Safe #4</td>
                     <td><span class="badge bg-success bg-opacity-25 text-success">Secured Indoors</span></td>
-                    <td><button class="btn btn-sm btn-outline-secondary">View Photo</button></td>
+                    <td><button class="btn btn-sm btn-outline-secondary table-action-btn">View Photo</button></td>
                   </tr>
                   <tr>
                     <td><i class="bi bi-envelope text-sage me-2"></i>First Class Letters (3)</td>
@@ -578,7 +578,7 @@
                     <td>Sep 23, 2026</td>
                     <td>Mail Holding Tray</td>
                     <td><span class="badge bg-success bg-opacity-25 text-success">Secured Indoors</span></td>
-                    <td><button class="btn btn-sm btn-outline-secondary">View Photo</button></td>
+                    <td><button class="btn btn-sm btn-outline-secondary table-action-btn">View Photo</button></td>
                   </tr>
                   <tr>
                     <td><i class="bi bi-file-earmark-text text-secondary me-2"></i>Utility Invoice Notice</td>
@@ -586,7 +586,7 @@
                     <td>Sep 16, 2026</td>
                     <td>Scanned &amp; Emailed</td>
                     <td><span class="badge bg-primary bg-opacity-25 text-primary">Digitized</span></td>
-                    <td><button class="btn btn-sm btn-outline-secondary">Download Scan</button></td>
+                    <td><button class="btn btn-sm btn-outline-secondary table-action-btn">Download Scan</button></td>
                   </tr>
                   <tr>
                     <td><i class="bi bi-box text-warning me-2"></i>Express Envelope (FedEx)</td>
@@ -594,7 +594,7 @@
                     <td>Sep 09, 2026</td>
                     <td>Forwarded to Denver HQ</td>
                     <td><span class="badge bg-secondary bg-opacity-25 text-secondary">Forwarded</span></td>
-                    <td><button class="btn btn-sm btn-outline-secondary">Tracking</button></td>
+                    <td><button class="btn btn-sm btn-outline-secondary table-action-btn">Tracking Info</button></td>
                   </tr>
                 </tbody>
               </table>
@@ -627,15 +627,15 @@
             <!-- Plan Summary Card -->
             <div class="row g-4 mb-4">
               <div class="col-lg-6">
-                <div class="p-4 bg-subtle rounded-3 border h-100">
-                  <div class="d-flex justify-content-between align-items-center mb-2">
+                <div class="p-4 bg-subtle rounded-3 border h-100 d-flex flex-column">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
                     <span class="eyebrow-badge badge-sage mb-0">Active Plan</span>
                     <strong class="fs-4 text-primary">$249 <span class="small text-muted fs-6">/ month</span></strong>
                   </div>
-                  <h5 class="fw-bold text-primary mb-1">Bi-Weekly Comprehensive Protection</h5>
-                  <p class="small text-secondary mb-3">Includes 2 scheduled visits per month, 18-point checklist
+                  <h5 class="fw-bold text-primary mb-2" style="min-height: 2.8rem;">Bi-Weekly Comprehensive Protection</h5>
+                  <p class="small text-secondary mb-3" style="min-height: 3.5rem;">Includes 2 scheduled visits per month, 18-point checklist
                     reports, digital photo proof, mail handling, and priority storm scan alerts.</p>
-                  <div class="d-flex flex-wrap gap-2 pt-2">
+                  <div class="d-flex flex-wrap gap-2 pt-2 mt-auto">
                     <a href="pricing.html" class="btn btn-sm btn-haven-primary">Change Frequency</a>
                     <button class="btn btn-sm btn-haven-secondary">Pause While Residing</button>
                   </div>
@@ -643,8 +643,13 @@
               </div>
 
               <div class="col-lg-6">
-                <div class="p-4 bg-subtle rounded-3 border h-100">
-                  <h6 class="fw-bold text-primary mb-3">Payment Method on File</h6>
+                <div class="p-4 bg-subtle rounded-3 border h-100 d-flex flex-column">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="eyebrow-badge badge-navy mb-0">Payment Method</span>
+                    <span class="badge bg-success-subtle text-sage fw-bold px-2 py-1">Auto-Pay Active</span>
+                  </div>
+                  <h5 class="fw-bold text-primary mb-2" style="min-height: 2.8rem;">Primary Payment Method on File</h5>
+                  <p class="small text-secondary mb-3" style="min-height: 3.5rem;">Recurring monthly subscription fee is processed automatically on the 1st of each calendar month using your default card.</p>
                   <div class="d-flex align-items-center gap-3 p-3 bg-surface rounded-2 border mb-3">
                     <i class="bi bi-credit-card-2-back text-primary fs-3"></i>
                     <div>
@@ -653,8 +658,9 @@
                     </div>
                     <span class="badge bg-primary text-white ms-auto">Primary</span>
                   </div>
-                  <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-plus-circle me-1"></i> Update Card
-                    Details</button>
+                  <div class="pt-2 mt-auto">
+                    <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-plus-circle me-1"></i> Update Card Details</button>
+                  </div>
                 </div>
               </div>
             </div>

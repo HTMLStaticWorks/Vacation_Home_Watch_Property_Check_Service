@@ -159,7 +159,7 @@ body {
   color: var(--text-primary);
   background-color: var(--bg-primary);
   transition: background-color var(--transition-base), color var(--transition-base);
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -243,15 +243,44 @@ img {
 
 .bg-navy {
   background-color: var(--brand-navy) !important;
-  color: #FFFFFF;
-}
-
-.bg-navy p, .bg-navy .text-secondary {
-  color: #B5C6D8 !important;
+  color: #FFFFFF !important;
 }
 
 .bg-navy h1, .bg-navy h2, .bg-navy h3, .bg-navy h4, .bg-navy h5 {
   color: #FFFFFF !important;
+}
+
+.bg-navy p,
+.bg-navy .text-secondary,
+.bg-navy .lead,
+.bg-navy .text-light {
+  color: rgba(255, 255, 255, 0.94) !important;
+  opacity: 1 !important;
+}
+
+.bg-navy .text-warning {
+  color: #FBBF24 !important;
+  font-weight: 700 !important;
+}
+
+.bg-navy .eyebrow-badge,
+.bg-navy .eyebrow-badge.badge-navy {
+  background-color: rgba(255, 255, 255, 0.14) !important;
+  color: #FBBF24 !important;
+  border: 1px solid rgba(251, 191, 36, 0.45) !important;
+}
+
+.bg-navy .eyebrow-badge i {
+  color: #FBBF24 !important;
+}
+
+.bg-navy .card-checklist li,
+.bg-navy .card-checklist li span {
+  color: #FFFFFF !important;
+}
+
+.bg-navy .card-checklist li i {
+  color: #FBBF24 !important;
 }
 
 /* Badges & Section Eyebrows */
@@ -634,6 +663,11 @@ img {
    6. Header & Navigation
    -------------------------------------------------------------------------- */
 .haven-navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   background-color: var(--glass-bg);
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
@@ -646,6 +680,16 @@ img {
 .haven-navbar.navbar-scrolled {
   box-shadow: var(--shadow-md);
   padding: 0.6rem 0;
+  animation: slideDownNav 0.35s ease-out forwards;
+}
+
+@keyframes slideDownNav {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .navbar-brand-wrapper {
@@ -835,15 +879,21 @@ img {
   }
 }
 
-/* Theme Toggle Button */
+/* Theme Toggle Button - Matching Dimensions & Transparent Background */
 .theme-toggle-btn {
   width: 40px;
   height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  padding: 0;
+  box-sizing: border-box;
   border-radius: 50%;
   border: 1px solid var(--border-color);
-  background-color: var(--bg-surface);
+  background-color: transparent !important;
   color: var(--text-secondary);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -851,9 +901,23 @@ img {
 }
 
 .theme-toggle-btn:hover {
-  background-color: var(--bg-subtle);
-  color: var(--brand-brass);
-  transform: rotate(15deg);
+  background-color: var(--bg-subtle) !important;
+  color: var(--brand-sage);
+  border-color: var(--brand-sage);
+}
+
+.theme-toggle-btn.active,
+[data-bs-theme="dark"] .theme-toggle-btn {
+  border-color: var(--brand-sage) !important;
+  color: var(--brand-sage) !important;
+  background-color: transparent !important;
+  box-shadow: 0 0 10px var(--brand-sage-glow);
+}
+
+.theme-toggle-btn.active i,
+[data-bs-theme="dark"] .theme-toggle-btn i {
+  color: #34D399 !important;
+  filter: drop-shadow(0 0 4px rgba(52, 211, 153, 0.6));
 }
 
 /* --------------------------------------------------------------------------
@@ -1993,11 +2057,17 @@ img {
 .rtl-toggle-btn {
   width: 40px;
   height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  padding: 0;
+  box-sizing: border-box;
   border-radius: 50%;
   border: 1px solid var(--border-color);
-  background-color: var(--bg-surface);
+  background-color: transparent !important;
   color: var(--text-primary);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-heading);
@@ -2010,23 +2080,20 @@ img {
 }
 
 .rtl-toggle-btn:hover,
-.rtl-toggle-btn.active {
-  background-color: var(--brand-brass);
-  color: #14202E;
-  border-color: var(--brand-brass);
-  box-shadow: 0 4px 12px var(--brand-brass-glow);
+.rtl-toggle-btn.active,
+[data-bs-theme="dark"] .rtl-toggle-btn:hover,
+[data-bs-theme="dark"] .rtl-toggle-btn.active {
+  background-color: var(--brand-sage) !important;
+  color: #FFFFFF !important;
+  border-color: var(--brand-sage) !important;
+  box-shadow: 0 4px 12px var(--brand-sage-glow) !important;
+  transform: none !important;
 }
 
 [data-bs-theme="dark"] .rtl-toggle-btn {
-  background-color: var(--bg-surface-elevated);
+  background-color: transparent !important;
   color: var(--text-primary);
   border-color: var(--border-color);
-}
-
-[data-bs-theme="dark"] .rtl-toggle-btn:hover,
-[data-bs-theme="dark"] .rtl-toggle-btn.active {
-  background-color: var(--brand-brass);
-  color: #14202E;
 }
 
 /* RTL Layout Direction Rules */
@@ -2085,6 +2152,17 @@ img {
 [dir="rtl"] .card-checklist li i {
   margin-left: 0.65rem;
   margin-right: 0;
+}
+
+/* In RTL mode, position dropdown arrow at the extreme left of each question row */
+[dir="rtl"] .accordion-button {
+  text-align: right;
+  flex-direction: row;
+}
+
+[dir="rtl"] .accordion-button::after {
+  margin-left: 0 !important;
+  margin-right: auto !important;
 }
 
 [dir="rtl"] .report-photo-thumb .photo-caption-tag {
@@ -2550,9 +2628,10 @@ img {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding: 4.5rem 0;
+  padding: 5rem 0;
   overflow: hidden;
   border-bottom: 1px solid var(--border-color);
+  text-align: center;
 }
 
 .page-hero::before {
@@ -2562,31 +2641,51 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(14, 26, 38, 0.88) 0%, rgba(18, 34, 50, 0.74) 100%);
+  background: linear-gradient(180deg, rgba(10, 20, 30, 0.48) 0%, rgba(14, 26, 38, 0.54) 100%);
   z-index: 1;
 }
 
 [data-bs-theme="dark"] .page-hero::before,
 html[data-theme="dark"] .page-hero::before {
-  background: linear-gradient(135deg, rgba(8, 14, 22, 0.94) 0%, rgba(11, 20, 31, 0.85) 100%);
+  background: linear-gradient(180deg, rgba(6, 12, 18, 0.60) 0%, rgba(10, 18, 28, 0.66) 100%);
 }
 
 .page-hero > .container {
   position: relative;
   z-index: 2;
+  text-align: center;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.page-hero .display-4,
 .page-hero .display-5,
 .page-hero h1 {
   color: #FFFFFF !important;
   font-weight: 800;
   letter-spacing: -0.02em;
+  text-align: center;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
 }
 
 .page-hero .lead,
 .page-hero p {
-  color: rgba(255, 255, 255, 0.9) !important;
-  max-width: 680px;
+  color: rgba(255, 255, 255, 0.94) !important;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+.page-hero .breadcrumb {
+  justify-content: center;
+}
+
+.page-hero .eyebrow-badge {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-hero .breadcrumb-item,
@@ -2645,13 +2744,13 @@ html[data-theme="dark"] .page-hero::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(180deg, rgba(14, 26, 38, 0.90) 0%, rgba(18, 34, 50, 0.82) 45%, rgba(14, 26, 38, 0.95) 100%);
+  background: linear-gradient(180deg, rgba(14, 26, 38, 0.58) 0%, rgba(18, 34, 50, 0.48) 45%, rgba(14, 26, 38, 0.65) 100%);
   z-index: 1;
 }
 
 [data-bs-theme="dark"] .hero-home-2-wrapper::before,
 html[data-theme="dark"] .hero-home-2-wrapper::before {
-  background: linear-gradient(180deg, rgba(8, 14, 22, 0.95) 0%, rgba(11, 20, 31, 0.88) 45%, rgba(8, 14, 22, 0.98) 100%);
+  background: linear-gradient(180deg, rgba(8, 14, 22, 0.72) 0%, rgba(11, 20, 31, 0.62) 45%, rgba(8, 14, 22, 0.78) 100%);
 }
 
 .hero-home-2-wrapper > .container {
@@ -2847,5 +2946,321 @@ html[data-theme="dark"] .hero-home-2-wrapper::before {
   position: relative;
   z-index: 2;
 }
+
+/* ==========================================================================
+   28. Refinements for Card Media, Baseline Alignment & Mobile Controls
+   ========================================================================== */
+
+/* Base .text-sage definition */
+.text-sage {
+  color: var(--brand-sage);
+}
+
+/* Home-2 Hero & HUD High-Contrast Visibility in Light & Dark Mode */
+.hero-home-2-wrapper .lead,
+.hero-home-2-wrapper .text-white-50 {
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+
+.hero-home-2-wrapper .text-sage,
+.cta-banner-section .text-sage {
+  color: #34D399 !important; /* High contrast mint on dark hero & cta backgrounds */
+}
+
+.hero-hud-card {
+  color: #FFFFFF !important;
+}
+
+.hero-hud-card h5 {
+  color: #FFFFFF !important;
+}
+
+.hero-hud-card p {
+  color: rgba(255, 255, 255, 0.90) !important;
+}
+
+.hero-hud-card .text-white-50,
+.hero-hud-card span {
+  color: rgba(255, 255, 255, 0.88) !important;
+}
+
+.hero-hud-card .text-sage {
+  color: #34D399 !important;
+}
+
+.hero-hud-card .badge.bg-success-subtle {
+  background-color: rgba(52, 211, 153, 0.18) !important;
+  color: #34D399 !important;
+  border: 1px solid rgba(52, 211, 153, 0.35) !important;
+}
+
+.hero-trust-ribbon {
+  color: #FFFFFF !important;
+}
+
+.hero-trust-ribbon .text-sage {
+  color: #34D399 !important;
+}
+
+/* Services Page Card Media Flush: No Top, Left, or Right Spacing */
+.haven-card > .service-card-media:first-child {
+  margin: -2rem -2rem 1.25rem -2rem;
+  width: calc(100% + 4rem);
+  max-width: calc(100% + 4rem);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  overflow: hidden;
+}
+
+@media (max-width: 767.98px) {
+  .haven-card {
+    padding: 1.5rem;
+  }
+  .haven-card > .service-card-media:first-child {
+    margin: -1.5rem -1.5rem 1.25rem -1.5rem;
+    width: calc(100% + 3rem);
+    max-width: calc(100% + 3rem);
+  }
+}
+
+/* Heading & Subtext Baseline Alignment across Desktop, Tablet & Mobile */
+.haven-card h3,
+.haven-card h4 {
+  min-height: 3.5rem;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.65rem;
+}
+
+@media (max-width: 767.98px) {
+  .haven-card h3,
+  .haven-card h4 {
+    min-height: 3.6rem;
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+/* CTA Banner Section 2nd Button Visibility in Light Mode */
+.cta-banner-section .btn-haven-secondary,
+.cta-banner-section .btn-outline-light {
+  color: #FFFFFF !important;
+  border-color: rgba(255, 255, 255, 0.75) !important;
+  background-color: transparent !important;
+}
+
+.cta-banner-section .btn-haven-secondary:hover,
+.cta-banner-section .btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.22) !important;
+  border-color: #FFFFFF !important;
+  color: #FFFFFF !important;
+}
+
+/* Dashboard Action Column Uniform Button Size */
+.dash-table td:last-child .btn,
+.table-action-btn {
+  min-width: 125px;
+  width: 125px;
+  text-align: center !important;
+  justify-content: center !important;
+  white-space: nowrap !important;
+}
+
+/* Footer Brand Link */
+.haven-footer .footer-brand-link,
+.haven-footer .footer-brand-link .brand-title {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.haven-footer .footer-brand-link:hover .brand-title {
+  color: var(--brand-sage);
+}
+
+/* Single-Line CTA Buttons, Centered Text & Sizing across Mobile and Tablet */
+.btn,
+.btn-haven-primary,
+.btn-haven-secondary,
+.btn-haven-sage,
+.btn-outline-light,
+.btn-lg-custom,
+.btn-sm-custom,
+.auth-submit-btn {
+  white-space: nowrap !important;
+  text-align: center;
+  justify-content: center;
+}
+
+@media (max-width: 991.98px) {
+  .btn,
+  .btn-haven-primary,
+  .btn-haven-secondary,
+  .btn-haven-sage,
+  .btn-outline-light,
+  .btn-lg-custom,
+  .btn-sm-custom {
+    white-space: nowrap !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  /* Services Page CTA Buttons equal sizing in mobile & tablet */
+  .haven-card .d-flex.gap-2.mt-auto > .btn {
+    flex: 1 1 0;
+    width: 50%;
+    font-size: 0.82rem;
+    padding: 0.65rem 0.5rem;
+    white-space: nowrap !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+}
+
+/* Auth Pages (Login & Signup) Mobile Single-Line Row Rules */
+.auth-remember-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  gap: 0.5rem;
+}
+
+.auth-remember-row .form-check {
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.auth-remember-row .form-check-label,
+.auth-remember-row a {
+  white-space: nowrap !important;
+  font-size: 0.85rem;
+}
+
+.auth-footer-text {
+  white-space: nowrap !important;
+  font-size: 0.88rem;
+}
+
+@media (max-width: 575.98px) {
+  .auth-card {
+    padding: 2rem 1.25rem;
+  }
+  .auth-remember-row .form-check-label,
+  .auth-remember-row a {
+    font-size: 0.78rem;
+  }
+  .auth-footer-text {
+    font-size: 0.78rem;
+  }
+}
+
+/* ==========================================================================
+   29. Mobile & Tablet Hero & Pre-Footer Section Buttons Equal Sizing
+   Requirement: in mobile view, in hero section and section above footer, buttons size should be same.
+   ========================================================================== */
+
+/* Tablet & Intermediate Views (576px - 991.98px): Equal sized side-by-side or stacked buttons */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  header .d-flex.flex-wrap.gap-3 > .btn,
+  header .d-flex.gap-3 > .btn,
+  .hero-home-2-wrapper .d-flex.gap-3 > .btn,
+  .hero-home-2-wrapper .d-flex.flex-wrap.gap-3 > .btn,
+  .page-hero .d-flex.gap-3 > .btn,
+  .page-hero .d-flex.flex-wrap.gap-3 > .btn,
+  .cta-banner-section .d-flex.gap-3 > .btn,
+  .cta-banner-section .d-flex.flex-wrap.gap-3 > .btn {
+    width: 275px !important;
+    min-width: 275px !important;
+    max-width: 275px !important;
+    height: 50px !important;
+    min-height: 50px !important;
+    padding: 0 1.25rem !important;
+    font-size: 0.92rem !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+    justify-content: center !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* Mobile View (max-width: 767.98px): Equal Size Stacked Buttons */
+@media (max-width: 767.98px) {
+  /* Hero button group & Pre-footer CTA banner button group containers */
+  header .d-flex.flex-wrap.gap-3,
+  header .d-flex.gap-3,
+  .hero-home-2-wrapper .d-flex.gap-3,
+  .hero-home-2-wrapper .d-flex.flex-wrap.gap-3,
+  .page-hero .d-flex.gap-3,
+  .page-hero .d-flex.flex-wrap.gap-3,
+  .cta-banner-section .d-flex.gap-3,
+  .cta-banner-section .d-flex.flex-wrap.gap-3 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    gap: 0.75rem !important;
+  }
+
+  /* All CTA buttons in Hero & Pre-Footer Banner have identical dimensions */
+  header .d-flex.flex-wrap.gap-3 > .btn,
+  header .d-flex.gap-3 > .btn,
+  .hero-home-2-wrapper .d-flex.gap-3 > .btn,
+  .hero-home-2-wrapper .d-flex.flex-wrap.gap-3 > .btn,
+  .page-hero .d-flex.gap-3 > .btn,
+  .page-hero .d-flex.flex-wrap.gap-3 > .btn,
+  .cta-banner-section .d-flex.gap-3 > .btn,
+  .cta-banner-section .d-flex.flex-wrap.gap-3 > .btn,
+  .cta-banner-section > .container > .btn {
+    width: 100% !important;
+    max-width: 325px !important;
+    height: 50px !important;
+    min-height: 50px !important;
+    padding: 0 1.25rem !important;
+    font-size: 0.92rem !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+    justify-content: center !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Mobile text center alignment for hero in index.html */
+  header .hero-anim-item {
+    text-align: center;
+  }
+  header .hero-anim-item .eyebrow-badge {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header .hero-anim-item .d-flex.align-items-center.gap-4.pt-2 {
+    justify-content: center;
+  }
+}
+
+/* Extra small mobile screens (max-width: 575.98px) */
+@media (max-width: 575.98px) {
+  header .d-flex.flex-wrap.gap-3 > .btn,
+  header .d-flex.gap-3 > .btn,
+  .hero-home-2-wrapper .d-flex.gap-3 > .btn,
+  .hero-home-2-wrapper .d-flex.flex-wrap.gap-3 > .btn,
+  .page-hero .d-flex.gap-3 > .btn,
+  .page-hero .d-flex.flex-wrap.gap-3 > .btn,
+  .cta-banner-section .d-flex.gap-3 > .btn,
+  .cta-banner-section .d-flex.flex-wrap.gap-3 > .btn,
+  .cta-banner-section > .container > .btn {
+    width: 100% !important;
+    max-width: 305px !important;
+    font-size: 0.88rem !important;
+    height: 48px !important;
+    min-height: 48px !important;
+    padding: 0 1rem !important;
+  }
+}
+
 
 

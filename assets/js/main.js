@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // -------------------------------------------------------------------------
   // 1. Theme Toggle System (Light / Dark Mode)
   // -------------------------------------------------------------------------
-  const themeToggleBtns = document.querySelectorAll('.theme-toggle-btn');
+  const themeToggleBtns = document.querySelectorAll('.theme-toggle-btn:not(.rtl-toggle-btn)');
   const storedTheme = localStorage.getItem('homehaven_theme');
   const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 
@@ -27,15 +27,18 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('homehaven_theme', theme);
 
     themeToggleBtns.forEach(btn => {
+      if (btn.classList.contains('rtl-toggle-btn')) return;
       const icon = btn.querySelector('i');
       if (icon) {
         if (theme === 'dark') {
-          icon.className = 'bi bi-sun-fill';
-          btn.setAttribute('aria-label', 'Switch to light mode');
-          btn.setAttribute('title', 'Switch to light mode');
-        } else {
           icon.className = 'bi bi-moon-stars-fill';
-          btn.setAttribute('aria-label', 'Switch to dark mode');
+          btn.classList.add('active');
+          btn.setAttribute('aria-label', 'Dark mode active - click to switch to light mode');
+          btn.setAttribute('title', 'Dark mode active');
+        } else {
+          icon.className = 'bi bi-moon';
+          btn.classList.remove('active');
+          btn.setAttribute('aria-label', 'Light mode active - click to switch to dark mode');
           btn.setAttribute('title', 'Switch to dark mode');
         }
       }
@@ -49,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
   themeToggleBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
+      if (btn.classList.contains('rtl-toggle-btn')) return;
       const currentTheme = document.documentElement.getAttribute('data-bs-theme') || 'light';
       const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
       applyTheme(newTheme);
